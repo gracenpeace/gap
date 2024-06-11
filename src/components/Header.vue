@@ -43,19 +43,19 @@ export default {
   <transition name="menu-fade">
     <div class="menuList" v-if="menuOpen">
       <div class="menuDetail1">
-        <router-link to="/" class="menuLink">
+        <router-link to="/introduce" class="menuLink">
           <svg  xmlns="http://www.w3.org/2000/svg"  width="35"  height="35"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-building-church"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l18 0" /><path d="M10 21v-4a2 2 0 0 1 4 0v4" /><path d="M10 5l4 0" /><path d="M12 3l0 5" /><path d="M6 21v-7m-2 2l8 -8l8 8m-2 -2v7" /></svg>
         </router-link>
         <p>교회 소개</p>
       </div>
       <div class="menuDetail2">
-        <router-link to="/" class="menuLink">
+        <router-link to="/worship" class="menuLink">
           <svg  xmlns="http://www.w3.org/2000/svg"  width="35"  height="35"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chalkboard"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 19h-3a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v11a1 1 0 0 1 -1 1" /><path d="M11 16m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /></svg>
         </router-link>
         <p>예배 안내</p>
       </div>
       <div class="menuDetail3">
-        <router-link to="/" class="menuLink">
+        <router-link to="/map" class="menuLink">
         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" /><path d="M9 4v13" /><path d="M15 7v13" /></svg>
         </router-link>
         <p>찾아오시는길</p>
@@ -130,6 +130,7 @@ export default {
     opacity: 0.9;
     padding: 2.5rem 1.5rem 0 1.5rem;
     color: white;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
   }
   .menuLink {
     background-color: white;

@@ -4,6 +4,9 @@ import Theology from '../views/Theology.vue'
 import Life from '../views/Life.vue'
 import Confession from '../views/Confession.vue'
 import Heresy from '../views/Heresy.vue'
+import Introduce from '../views/menu/Introduce.vue'
+import Worship from '../views/menu/Worship.vue'
+import Map from '../views/menu/Map.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +40,21 @@ const router = createRouter({
       path: '/heresy',
       name: 'heresy',
       component: Heresy
+    },
+    {
+      path: '/introduce',
+      name: 'introduce',
+      component: Introduce
+    },
+    {
+      path: '/map',
+      name: 'map',
+      component: Map
+    },
+    {
+      path: '/worship',
+      name: 'worship',
+      component: Worship
     }
   ],
   linkActiveClass: 'active',

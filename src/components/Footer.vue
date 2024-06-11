@@ -46,7 +46,7 @@ export default {
 </template>
 
 <style scoped>
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .footerContentLink {
     display: flex;
     flex-wrap: wrap;
@@ -75,15 +75,7 @@ export default {
   }
   .footerContentFont {
     font-size: 13px;
-  }
-  .footerContentMenu{
-    display: flex;
-    flex-wrap: wrap;
-    width: 15%;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    color: black;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
   }
   .footerContentLink.now-page > .footerContent{
     color: goldenrod;

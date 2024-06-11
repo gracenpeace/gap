@@ -70,6 +70,7 @@ export default {
     height: 190px;
     background-color: white;
     color: black;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
   }
   .main-container2 {
     padding: 1rem;
@@ -77,6 +78,7 @@ export default {
     height: fit-content;
     background-color: #DCDCDC;
     padding-bottom: 100px;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
 
   }
   .main-container2 p {
