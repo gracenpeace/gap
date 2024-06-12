@@ -1,6 +1,25 @@
 <script>
 export default {
-  name : "Introduce",
+  name: 'Introduce',
+  mounted() {
+    this.loadYouTubeAPI()
+  },
+  methods: {
+    loadYouTubeAPI() {
+      this.player = new YT.Player('player', {
+        height: '180',
+        width: '320',
+        videoId: 'YYgcq2RCIvQ',
+        events: {
+          onReady: this.onPlayerReady,
+          onStateChange: this.onPlayerStateChange
+        }
+      })
+    },
+    onPlayerReady(event) {
+      event.target.playVideo()
+    }
+  }
 }
 </script>
 
@@ -8,8 +27,7 @@ export default {
   <div class="introduce-container">
     교회 소개 페이지
     <div>
-      <iframe id="player" type="text/html" width="320" height="180" src="http://www.youtube.com/embed/YYgcq2RCIvQ"
-      ></iframe>
+      <div id="player" class="player"></div>
     </div>
   </div>
 </template>
@@ -20,10 +38,15 @@ export default {
     padding: 1rem 2.5rem 0 2.5rem;
     background-color: white;
   }
-}@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
   .introduce-container {
     padding: 1rem 2.5rem 0 2.5rem;
     background-color: white;
+  }
+  .player {
+    width: 320;
+    height: 180;
   }
 }
 </style>

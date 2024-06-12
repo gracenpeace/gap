@@ -1,13 +1,11 @@
 <script>
 export default {
-  name: 'Life',
+  name: 'Life'
 }
 </script>
 
 <template>
-<div class="lifeMain">
-  신앙의삶 페이지 입니다.
-</div>
+  <div class="lifeMain">신앙의삶 페이지 입니다.</div>
 </template>
 
 <style scoped>
@@ -21,6 +19,9 @@ export default {
   .lifeMain {
     padding: 1rem 2.5rem 0 2.5rem;
     background-color: white;
+    font-size: 13px;
+    font-family: NanumSquareNeo-Variable-regular, sans-serif;
+    color: black;
   }
 }
 </style>
