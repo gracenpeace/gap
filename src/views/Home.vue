@@ -33,6 +33,7 @@ export default {
     height: 190px;
     background-color: white;
     color: black;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
   }
   .main-container2 {
     padding: 1rem;
@@ -40,6 +41,7 @@ export default {
     height: fit-content;
     background-color: #DCDCDC;
     padding-bottom: 100px;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
 
   }
   .main-container2 p {
@@ -57,43 +59,9 @@ export default {
     border-radius: 15px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) {
   .main-container {
-    flex : 1;
-    overflow-y: auto;
-    padding-bottom: 90px;
-    /*height: 800px;*/
-  }
-  .main-container1 {
-    padding: 1rem 0 0 2.5rem;
-    width: 100%;
-    height: 190px;
-    background-color: white;
-    color: black;
-    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-  }
-  .main-container2 {
-    padding: 1rem;
-    width: 100%;
-    height: fit-content;
-    background-color: #DCDCDC;
-    padding-bottom: 100px;
-    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-
-  }
-  .main-container2 p {
-    padding: 1rem 0 0 1.7rem;
-    color: black;
-  }
-  .kellyBox {
-    padding-top: 0.4rem;
-    width: 100%;
-    display: flex;
-  }
-  .main-container2 img {
-    width: 90%;
-    margin: auto;
-    border-radius: 15px;
+    width: 1200px;
   }
 }
 </style>

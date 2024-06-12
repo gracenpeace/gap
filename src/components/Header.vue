@@ -77,38 +77,6 @@ export default {
   .headerImg img {
     width: 40%;
     background-color: white;
-    cursor: pointer;
-  }
-  .menuBox {
-    width: 10%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1rem;
-    cursor: pointer;
-    background-color: white;
-  }
-  .menuList {
-    position: absolute;
-    background-color: #2E4184;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    top: 7rem;
-    left: 0;
-    opacity: 0.9;
-  }
-}
-@media screen and (max-width: 767.9px) {
-  .headerImg {
-    padding : 0.7rem 0 0.5rem 0.8rem;
-    background-color: white;
-    display: flex;
-  }
-  .headerImg img {
-    width: 40%;
-    background-color: white;
   }
   .menuBox {
     width: 10%;
@@ -165,6 +133,24 @@ export default {
     top: 10rem;
   }
 }
+@media screen and (min-width: 1024px) {
+  .headerImg {
+    width: 1200px;
+    height: 100px;
+    padding : 0.7rem 0 0.5rem 0.8rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerImg img {
+    width: 250px;
+    background-color: white;
+  }
+  .menuBox, .menuList {
+    display: none;
+  }
+}
 
 .menu-fade-enter-active, .menu-fade-leave-active {
   transition: opacity 0.6s;
@@ -172,11 +158,4 @@ export default {
 .menu-fade-enter-from, .menu-fade-leave-to /* .menu-fade-leave-active in <2.1.8 */ {
   opacity: 0;
 }
-@media screen and (min-width: 1025px) {
-  .headerImg img {
-    width: 200px;
-    margin: auto;
-  }
-}
-
 </style>

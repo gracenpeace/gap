@@ -46,7 +46,7 @@ export default {
 </template>
 
 <style scoped>
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .footerContentLink {
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +79,11 @@ export default {
   }
   .footerContentLink.now-page > .footerContent{
     color: goldenrod;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footerBox {
+    display: none;
   }
 }
 </style>

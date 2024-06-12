@@ -20,6 +20,9 @@ export default {
   .confessionMain {
     padding: 1rem 2.5rem 0 2.5rem;
     background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 100%;
   }
 }
 </style>

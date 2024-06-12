@@ -46,6 +46,7 @@ export default {
   .worship-container {
     padding: 1rem 2.5rem 0 2.5rem;
     background-color: white;
+    height: 100%;
   }
   .worshipContents {
     padding: 2rem 0 0 1rem
