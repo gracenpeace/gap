@@ -4,6 +4,7 @@ export default {
   data() {
     return {
       isDropDown : false,
+      isDropDown2 : false,
       isFixed: false,
     }
   },
@@ -13,6 +14,12 @@ export default {
     },
     removeDropDown() {
       this.isDropDown = false
+    },
+    addDropDown2() {
+      this.isDropDown2 = true
+    },
+    removeDropDown2() {
+      this.isDropDown2 = false
     },
     handleScroll() {
       // 스크롤 시에 호출되는 메소드
@@ -40,30 +47,35 @@ export default {
       <li @mouseenter="addDropDown" @mouseleave="removeDropDown">
         <span href=""  style="font-size: 20px; cursor: pointer;">교회소개</span>
         <div class="weUl" :class="{'isDropDown' : isDropDown}"  >
-          <router-link to="/">우리는 소개</router-link>
-          <router-link to="/">우리는 사역소개</router-link>
-          <hr>
-          <a href="https://khendev23.notion.site/2023-b9447223e5014629a1480c82df21d756?pvs=4" target="_blank">2023 우리는</a>
-          <a @click="alarm">2024 우리는</a>
+          <router-link to="/">목사님 소개</router-link>
+          <router-link to="/">목회 비전</router-link>
+          <router-link to="/">섬기는이</router-link>
+          <router-link to="/">예배 안내</router-link>
+          <router-link to="/">찾아오시는길</router-link>
         </div>
       </li>
       <li>
-        <router-link to="/">공지사항</router-link>
+        <router-link to="/">정통신학</router-link>
       </li>
       <li>
-        <router-link to="/">예배</router-link>
+        <router-link to="/">신앙의삶</router-link>
       </li>
       <li>
-        <router-link to="/">사역</router-link>
+        <router-link to="/">신앙고백</router-link>
       </li>
       <li>
-        <router-link to="/">질문</router-link>
+        <router-link to="/">이단</router-link>
+      </li>
+      <li @mouseenter="addDropDown2" @mouseleave="removeDropDown2">
+        <span href=""  style="font-size: 20px; cursor: pointer;">다음세대 세움</span>
+        <div class="weUl" :class="{'isDropDown' : isDropDown2}"  >
+          <router-link to="/">주일학교</router-link>
+          <router-link to="/">라온 학생부</router-link>
+          <router-link to="/">우리는 청년부</router-link>
+        </div>
       </li>
       <li>
-        <a href="https://khendev23.notion.site/a9be08d0e5ec4aa6b5096dc5bfc9cdfc?pvs=4" target="_blank">자료실</a>
-      </li>
-      <li>
-        <a href="https://forms.gle/ej7xdjdN4LpWmXPV6" target="_blank">피드백</a>
+        <router-link to="/">양육</router-link>
       </li>
     </ul>
   </div>
@@ -73,13 +85,14 @@ li {
   list-style: none;
     float: left;
     margin: 0 5px;
+    text-align: center;
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1025px){
   .navBox{
     display: none;
   } 
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .navBox {
     width: 100%;
     border-bottom: 3px solid #1f4866;
@@ -110,12 +123,11 @@ li {
     background: #1f4866;
     color: white;
     position: absolute;
-    /* left: 22.3%; */
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     margin-top: 18px;
-    margin-left: 10px;
+    margin-left: 20px;
     z-index: 1;
   }
   .weUl a {

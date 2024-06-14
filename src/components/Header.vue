@@ -68,7 +68,7 @@ export default {
 </template>
 
 <style scoped>
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .headerImg {
     padding : 0.7rem 0 0.5rem 0.8rem;
     background-color: white;
@@ -133,9 +133,9 @@ export default {
     top: 10rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .headerImg {
-    width: 1200px;
+    /*width: 1200px;*/
     height: 100px;
     padding : 0.7rem 0 0.5rem 0.8rem;
     background-color: white;

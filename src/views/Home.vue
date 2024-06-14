@@ -6,6 +6,9 @@ export default {
 
 <template>
   <div class="main-container">
+    <div class="mainBgBox">
+      <img src="https://www.dropbox.com/scl/fi/a4vd1yon69es5wrcmxbud/mainPic1.jpg?rlkey=cx751fwd1c30gtmpfwmsqymvv&raw=1" alt="" width="1200">
+    </div>
     <div class="main-container1">
       <p>은혜와평강교회에 오신 여러분</p>
       <p>사랑하고 축복합니다</p>
@@ -20,7 +23,7 @@ export default {
 </template>
 
 <style scoped>
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .main-container {
     flex : 1;
     overflow-y: auto;
@@ -58,10 +61,43 @@ export default {
     margin: auto;
     border-radius: 15px;
   }
+  .mainBgBox {
+    display: none;
+  }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .main-container {
+    width: 100%;
+    background-color: #f7f6f5;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  .mainBgBox {
     width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .main-container2 {
+    background-color: white;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding : 20px 30px 0 30px;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 17px;
+  }
+  .main-container1 p{
+    display: none;
+  }
+  .kellyBox {
+    display: flex;
+  }
+  .kellyBox img {
+    width: 35%;
+    margin: auto;
+    border-radius: 15px;
   }
 }
 </style>

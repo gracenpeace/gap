@@ -30,7 +30,7 @@ export default {
 </template>
 
 <style scoped>
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px) {
   .worship-container {
     padding: 1rem 2.5rem 0 2.5rem;
     background-color: white;
