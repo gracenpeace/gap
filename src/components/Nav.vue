@@ -47,6 +47,7 @@ export default {
       <li @mouseenter="addDropDown" @mouseleave="removeDropDown">
         <span href=""  style="font-size: 20px; cursor: pointer;">교회소개</span>
         <div class="weUl" :class="{'isDropDown' : isDropDown}"  >
+          <router-link to="/">교회 소개</router-link>
           <router-link to="/">목사님 소개</router-link>
           <router-link to="/">목회 비전</router-link>
           <router-link to="/">섬기는이</router-link>
@@ -111,6 +112,7 @@ li {
     font-family: 'NanumSquareNeo-Variable-ExtraBold';
     width: 150px;
     height: 55px;
+    color: black;
   }
   .navUl a {
     text-decoration: none;
