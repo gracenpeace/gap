@@ -46,13 +46,14 @@ export default {
     <ul class="navUl">
       <li @mouseenter="addDropDown" @mouseleave="removeDropDown">
         <span href=""  style="font-size: 20px; cursor: pointer;">교회소개</span>
-        <div class="weUl" :class="{'isDropDown' : isDropDown}"  >
+        <div class="weUl1" :class="{'isDropDown' : isDropDown}"  >
           <router-link to="/">교회 소개</router-link>
           <router-link to="/">목사님 소개</router-link>
           <router-link to="/">목회 비전</router-link>
           <router-link to="/">섬기는이</router-link>
           <router-link to="/">예배 안내</router-link>
           <router-link to="/">찾아오시는길</router-link>
+          <router-link to="/">연간 행사</router-link>
         </div>
       </li>
       <li>
@@ -64,19 +65,22 @@ export default {
       <li>
         <router-link to="/">신앙고백</router-link>
       </li>
-      <li>
+      <li style="width: 90px;">
         <router-link to="/">이단</router-link>
       </li>
-      <li @mouseenter="addDropDown2" @mouseleave="removeDropDown2">
+      <li @mouseenter="addDropDown2" @mouseleave="removeDropDown2" style="width: 150px">
         <span href=""  style="font-size: 20px; cursor: pointer;">다음세대 세움</span>
-        <div class="weUl" :class="{'isDropDown' : isDropDown2}"  >
+        <div class="weUl2" :class="{'isDropDown' : isDropDown2}"  >
           <router-link to="/">주일학교</router-link>
           <router-link to="/">라온 학생부</router-link>
           <router-link to="/">우리는 청년부</router-link>
         </div>
       </li>
-      <li>
+      <li style="width: 100px;">
         <router-link to="/">양육</router-link>
+      </li>
+      <li style="width: 80px">
+        <router-link to="/">상담</router-link>
       </li>
     </ul>
   </div>
@@ -107,10 +111,12 @@ li {
     width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
   .navUl li {
-    font-family: 'NanumSquareNeo-Variable-ExtraBold';
-    width: 150px;
+    font-family: 'NanumSquareNeo-Variable-ExtraBold',sans-serif;
+    width: 120px;
     height: 55px;
     color: black;
   }
@@ -119,8 +125,8 @@ li {
     color: inherit;
     font-size: 20px;
   }
-  .weUl {
-    font-family: 'NanumSquareNeo-Variable-Regular';
+  .weUl1 {
+    font-family: 'NanumSquareNeo-Variable-Regular',sans-serif;
     padding: 10px;
     background: #1f4866;
     color: white;
@@ -129,10 +135,23 @@ li {
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     margin-top: 18px;
-    margin-left: 20px;
+    margin-left: 4px;
     z-index: 1;
   }
-  .weUl a {
+  .weUl2 {
+    font-family: 'NanumSquareNeo-Variable-Regular',sans-serif;
+    padding: 10px;
+    background: #1f4866;
+    color: white;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    margin-top: 18px;
+    margin-left: 18px;
+    z-index: 1;
+  }
+  .weUl1 a, .weUl2 a {
     display: block;
     cursor: pointer;
     margin-top: 10px;
