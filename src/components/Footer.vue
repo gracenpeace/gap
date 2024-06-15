@@ -2,6 +2,7 @@
 
 export default {
   name: 'Footer',
+  emits: ['routeChanged'],
   watch: {
     '$route'() {
       this.$emit('routeChanged');
