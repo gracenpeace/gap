@@ -10,6 +10,7 @@ import Vision from "@/views/menu/Vision.vue";
 import ServePerson from "@/views/menu/ServePerson.vue";
 import Worship from '../views/menu/Worship.vue'
 import Map from '../views/menu/Map.vue'
+import AnnualEvent from '../views/menu/AnnualEvent.vue'
 
 import SundaySchool from "@/views/menu/SundaySchool.vue";
 import RaonStudents from "@/views/menu/RaonStudents.vue";
@@ -80,6 +81,11 @@ const router = createRouter({
       path: '/worship',
       name: 'worship',
       component: Worship
+    },
+    {
+      path: '/annualEvent',
+      name: 'annualEvent',
+      component: AnnualEvent
     },
     {
       path: '/sundaySchool',

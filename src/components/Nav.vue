@@ -26,9 +26,6 @@ export default {
       const navbar = this.$refs.navbar;
       this.isFixed = window.scrollY  > navbar.offsetTop;
     },
-    alarm() {
-      alert('올 겨울에 만나요~')
-    }
   },
   mounted() {
     // 스크롤 이벤트에 핸들러를 추가
@@ -47,40 +44,40 @@ export default {
       <li @mouseenter="addDropDown" @mouseleave="removeDropDown">
         <span href=""  style="font-size: 20px; cursor: pointer;">교회소개</span>
         <div class="weUl1" :class="{'isDropDown' : isDropDown}"  >
-          <router-link to="/">교회 소개</router-link>
-          <router-link to="/">목사님 소개</router-link>
-          <router-link to="/">목회 비전</router-link>
-          <router-link to="/">섬기는이</router-link>
-          <router-link to="/">예배 안내</router-link>
-          <router-link to="/">찾아오시는길</router-link>
-          <router-link to="/">연간 행사</router-link>
+          <router-link to="/introduce">교회 소개</router-link>
+          <router-link to="/pastorIntroduce">목사님 소개</router-link>
+          <router-link to="/vision">목회 비전</router-link>
+          <router-link to="/servePerson">섬기는이</router-link>
+          <router-link to="/worship">예배 안내</router-link>
+          <router-link to="/map">오시는길</router-link>
+          <router-link to="/annualEvent">연간 행사</router-link>
         </div>
       </li>
       <li>
-        <router-link to="/">정통신학</router-link>
+        <router-link to="/theology">정통신학</router-link>
       </li>
       <li>
-        <router-link to="/">신앙의삶</router-link>
+        <router-link to="/life">신앙의삶</router-link>
       </li>
       <li>
-        <router-link to="/">신앙고백</router-link>
+        <router-link to="/confession">신앙고백</router-link>
       </li>
       <li style="width: 90px;">
-        <router-link to="/">이단</router-link>
+        <router-link to="/heresy">이단</router-link>
       </li>
       <li @mouseenter="addDropDown2" @mouseleave="removeDropDown2" style="width: 150px">
         <span href=""  style="font-size: 20px; cursor: pointer;">다음세대 세움</span>
         <div class="weUl2" :class="{'isDropDown' : isDropDown2}"  >
-          <router-link to="/">주일학교</router-link>
-          <router-link to="/">라온 학생부</router-link>
-          <router-link to="/">우리는 청년부</router-link>
+          <router-link to="/sundaySchool">주일학교</router-link>
+          <router-link to="/raonStudents">라온 학생부</router-link>
+          <router-link to="/weareYoute">우리는 청년부</router-link>
         </div>
       </li>
       <li style="width: 100px;">
-        <router-link to="/">양육</router-link>
+        <router-link to="/feed">양육</router-link>
       </li>
       <li style="width: 80px">
-        <router-link to="/">상담</router-link>
+        <router-link to="/consulting">상담</router-link>
       </li>
     </ul>
   </div>

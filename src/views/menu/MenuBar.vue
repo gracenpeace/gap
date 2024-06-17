@@ -20,7 +20,7 @@ export default {
       }
     }
   },
-  beforeDestroy() {
+  beforeUnmount() {
     // Ensure the no-scroll class is removed if the component is destroyed
     document.body.style.overflow = '';
   }
@@ -73,7 +73,13 @@ export default {
             <router-link to="/map" class="menuLink">
               <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" /><path d="M9 4v13" /><path d="M15 7v13" /></svg>
             </router-link>
-            <p>찾아오시는길</p>
+            <p>오시는길</p>
+          </div>
+          <div class="menuDetail menuDetailAnnualEvent">
+            <router-link to="/annualEvent" class="menuLink">
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" /><path d="M9 4v13" /><path d="M15 7v13" /></svg>
+            </router-link>
+            <p>연간행사</p>
           </div>
         </div>
       </div>
@@ -199,6 +205,9 @@ export default {
   .menuDetailMap {
     left: 60%;
   }
+  .menuDetailAnnualEvent {
+    left: 72%;
+  }
   .nextGeneration-container {
     position: relative;
     width: 100%;
@@ -291,6 +300,10 @@ export default {
   .menuDetailMap {
     top: 9rem;
     left: 5.5rem;
+  }
+  .menuDetailAnnualEvent {
+    top: 9rem;
+    left: 11rem;
   }
   .nextGeneration-container {
     position: relative;
