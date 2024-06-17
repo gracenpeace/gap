@@ -6,7 +6,13 @@ export default {
 
 <template>
   <div class="visionMain">
-    비전 소개 페이지 입니다.
+    <h1>은혜와평강교회는</h1>
+    <div style="margin-top: 30px;">
+      <p>1. 기독교 세계관과 가치관의 혼재로 방황하는 청소년, 청년들에게 그리스도를 앎으로 방황 끝, 행복 시작으로 꿈을 꾸고 이뤄가는 교회</p>
+      <p>2. 창조주 하나님을 앎으로 나의 존재와 참된 존재 목적과 존재 방식 알게된다. 이와같이 성경의 바른 이해와 해석으로 이끄는 교회</p>
+      <p>3. 하나님이 주인되시는 가정, 교회, 이나라 이민족 더 나아가 세계 열방으로 뻗어나가도록 영향력을 끼치는 바른 사도적 복음을 가르치는 교회</p>
+      <p>4. 요람에서 무덤까지 책임지는 교회</p>
+    </div>
   </div>
 </template>
 
@@ -19,11 +25,19 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .visionMain {
-    padding: 1rem 2.5rem 150px 2.5rem;
+    padding: 2rem 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
     height: 900px;
+  }
+  .visionMain h1 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+  }
+  .visionMain p {
+    line-height: 2.1;
+    font-size: 1rem;
+    margin-top: 25px;
   }
 }
 </style>

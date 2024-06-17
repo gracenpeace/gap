@@ -6,7 +6,18 @@ export default {
 
 <template>
   <div class="PastorIntroduceMain">
-    목사님 소개 페이지 입니다.
+    <div class="image-container">
+      <p>이미지</p>
+      <h2>담임목사 주기수</h2>
+    </div>
+    <div class="profile-container">
+      <h3>프로필</h3>
+      <p>은혜와평강교회 담임목사</p>
+      <p>경성노회 고시부장</p>
+      <p>한국개혁신학원(서철원 박사/조직신학전공)</p>
+      <p>합동총회 이단대책위원회 전문위원</p>
+      <p>경인 기독교 이단상담소 소장</p>
+    </div>
   </div>
 </template>
 
@@ -24,6 +35,20 @@ export default {
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
     height: 900px;
+  }
+  .image-container{
+    width:190px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .profile-container {
+    margin-top: 2rem;
+  }
+  .image-container h2, .profile-container h3 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
   }
 }
 </style>

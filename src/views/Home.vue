@@ -7,7 +7,7 @@ export default {
 <template>
   <div class="main-container">
     <div class="mainBgBox">
-      <img src="https://www.dropbox.com/scl/fi/a4vd1yon69es5wrcmxbud/mainPic1.jpg?rlkey=cx751fwd1c30gtmpfwmsqymvv&raw=1" alt="" width="1200">
+      <img src="https://www.dropbox.com/scl/fi/httyqv1z9v2t2wlp1hbl4/mainPic2.jpg?rlkey=ojjzruaodd9t6hhu7w892c35p&raw=1" alt="" width="1200">
     </div>
     <div class="main-container1">
       <p>은혜와평강교회에 오신 여러분</p>

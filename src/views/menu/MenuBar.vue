@@ -77,7 +77,7 @@ export default {
           </div>
           <div class="menuDetail menuDetailAnnualEvent">
             <router-link to="/annualEvent" class="menuLink">
-              <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-map"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" /><path d="M9 4v13" /><path d="M15 7v13" /></svg>
+              <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-confetti"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 5h2" /><path d="M5 4v2" /><path d="M11.5 4l-.5 2" /><path d="M18 5h2" /><path d="M19 4v2" /><path d="M15 9l-1 1" /><path d="M18 13l2 -.5" /><path d="M18 19h2" /><path d="M19 18v2" /><path d="M14 16.518l-6.518 -6.518l-4.39 9.58a1 1 0 0 0 1.329 1.329l9.579 -4.39z" /></svg>
             </router-link>
             <p>연간행사</p>
           </div>
@@ -285,13 +285,13 @@ export default {
     font-size: 12px;
   }
   .menuDetailPastorIntroduce {
-    left: 5.5rem;
+    left: 25%;
   }
   .menuDetailVision {
-    left: 11rem;
+    left: 50%;
   }
   .menuDetailServe {
-    left: 16.5rem;
+    left: 75%;
   }
   .menuDetailWorship {
     top: 9rem;
@@ -299,11 +299,11 @@ export default {
   }
   .menuDetailMap {
     top: 9rem;
-    left: 5.5rem;
+    left: 25%;
   }
   .menuDetailAnnualEvent {
     top: 9rem;
-    left: 11rem;
+    left: 50%;
   }
   .nextGeneration-container {
     position: relative;
@@ -311,10 +311,10 @@ export default {
     height: 160px;
   }
   .raonStudents {
-    left: 5.5rem;
+    left: 25%;
   }
   .weareYouth {
-    left: 11rem;
+    left: 50%;
   }
   .feedGospel {
     position: relative;
