@@ -1,23 +1,24 @@
 <script>
 export default {
-  name: 'Confession',
+  name: "WeareYouth",
 }
 </script>
 
 <template>
-<div class="confessionMain">
-  신앙고백 페이지 입니다.
-</div>
+  <div class="weareYouthMain">
+    우리는 청년부 페이지 입니다.
+  </div>
 </template>
 
 <style scoped>
 @media screen and (max-width: 1025px) {
-  .confessionMain {
+  .weareYouthMain {
     padding: 1rem 2.5rem 0 2.5rem;
     background-color: white;
   }
-}@media screen and (max-width: 768px) {
-  .confessionMain {
+}
+@media screen and (max-width: 768px) {
+  .weareYouthMain {
     padding: 1rem 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;

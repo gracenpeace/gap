@@ -5,8 +5,18 @@ import Life from '../views/Life.vue'
 import Confession from '../views/Confession.vue'
 import Heresy from '../views/Heresy.vue'
 import Introduce from '../views/menu/Introduce.vue'
+import PastorIntroduce from "@/views/menu/PastorIntroduce.vue";
+import Vision from "@/views/menu/Vision.vue";
+import ServePerson from "@/views/menu/ServePerson.vue";
 import Worship from '../views/menu/Worship.vue'
 import Map from '../views/menu/Map.vue'
+
+import SundaySchool from "@/views/menu/SundaySchool.vue";
+import RaonStudents from "@/views/menu/RaonStudents.vue";
+import WeareYouth from "@/views/menu/WeareYouth.vue";
+
+import Feed from "@/views/menu/Feed.vue";
+import Consulting from "@/views/menu/Consulting.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,6 +55,21 @@ const router = createRouter({
       path: '/introduce',
       name: 'introduce',
       component: Introduce
+    },,
+    {
+      path: '/pastorIntroduce',
+      name: 'pastorIntroduce',
+      component: PastorIntroduce
+    },
+    {
+      path: '/vision',
+      name: 'vision',
+      component: Vision
+    },
+    {
+      path: '/servePerson',
+      name: 'servePerson',
+      component: ServePerson
     },
     {
       path: '/map',
@@ -55,6 +80,31 @@ const router = createRouter({
       path: '/worship',
       name: 'worship',
       component: Worship
+    },
+    {
+      path: '/sundaySchool',
+      name: 'sundaySchool',
+      component: SundaySchool
+    },
+    {
+      path: '/raonStudents',
+      name: 'raonStudents',
+      component: RaonStudents
+    },
+    {
+      path: '/weareYoute',
+      name: 'weareYoute',
+      component : WeareYouth
+    },
+    {
+      path: '/feed',
+      name: 'feed',
+      component: Feed
+    },
+    {
+      path: '/consulting',
+      name: 'consulting',
+      component: Consulting
     }
   ],
   linkActiveClass: 'active',

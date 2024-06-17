@@ -53,7 +53,7 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .worship-container {
-    padding: 1rem 2.5rem 0 1.5rem;
+    padding: 1rem 2.5rem 150px 1.5rem;
     background-color: white;
     height: 100%;
     color: black;

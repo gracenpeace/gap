@@ -1,23 +1,24 @@
 <script>
 export default {
-  name: 'Confession',
+  name: "PastorIntroduce",
 }
 </script>
 
 <template>
-<div class="confessionMain">
-  신앙고백 페이지 입니다.
-</div>
+  <div class="PastorIntroduceMain">
+    목사님 소개 페이지 입니다.
+  </div>
 </template>
 
 <style scoped>
 @media screen and (max-width: 1025px) {
-  .confessionMain {
+  .PastorIntroduceMain {
     padding: 1rem 2.5rem 0 2.5rem;
     background-color: white;
   }
-}@media screen and (max-width: 768px) {
-  .confessionMain {
+}
+@media screen and (max-width: 768px) {
+  .PastorIntroduceMain {
     padding: 1rem 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;

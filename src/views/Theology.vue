@@ -26,9 +26,9 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .theologyMain {
-    padding: 1rem 2.5rem 0 2.5rem;
+    padding: 1rem 2.5rem 150px 2.5rem;
     background-color: white;
-    height: 100%;
+    height: 900px;
   }
   .theologyMain img{
     width: 50%;

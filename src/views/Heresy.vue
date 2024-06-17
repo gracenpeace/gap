@@ -18,9 +18,9 @@ export default {
   }
 }@media screen and (max-width: 768px) {
   .heresyMain {
-    padding: 1rem 2.5rem 0 2.5rem;
+    padding: 1rem 2.5rem 150px 2.5rem;
     background-color: white;
-    height: 100%;
+    height: 900px;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
   }
