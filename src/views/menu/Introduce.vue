@@ -96,6 +96,7 @@ export default {
   .introduce-container h2 {
     font-size: 1.7rem;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    padding-left: 70px;
   }
   .video-wrapper {
     margin-top: 50px;
