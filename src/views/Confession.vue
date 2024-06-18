@@ -67,5 +67,8 @@ export default {
   .creed h2 {
     font-size: 1.3rem;
   }
+  .creed p {
+    font-size: 1.1rem;
+  }
 }
 </style>

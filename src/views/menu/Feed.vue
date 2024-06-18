@@ -33,8 +33,25 @@ export default {
 <style scoped>
 @media screen and (max-width: 1025px) {
   .feedMain {
-    padding: 1rem 2.5rem 0 2.5rem;
+    padding: 8rem 4.5rem 0 4.5rem;
     background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 900px;
+  }
+  .feedMain h2 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 1.8rem;
+  }
+  .feed-container {
+    margin-top: 30px;
+  }
+  .feed-container h3 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 1.3rem;
+  }
+  .feed-container p{
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -47,14 +64,17 @@ export default {
   }
   .feedMain h2 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    font-size: 1.7rem;
+    font-size: 28px;
   }
   .feed-container {
     margin-top: 30px;
   }
   .feed-container h3 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    font-size: 1.2rem;
+    font-size: 18px;
+  }
+  .feed-container p{
+    font-size: 13px;
   }
 }
 </style>

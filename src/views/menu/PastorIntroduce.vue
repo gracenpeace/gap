@@ -59,7 +59,7 @@ export default {
     height: 900px;
   }
   .image-container{
-    width:190px;
+    width:200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -68,9 +68,18 @@ export default {
   }
   .profile-container {
     margin-top: 2rem;
+    line-height: 1.8;
   }
-  .image-container h2, .profile-container h3 {
+  .image-container h2 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 23px;
+  }
+  .profile-container h3 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 20px;
+  }
+  .profile-container p {
+    font-size: 15px;
   }
 }
 </style>

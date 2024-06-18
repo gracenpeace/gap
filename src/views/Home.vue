@@ -91,6 +91,7 @@ export default {
     background-color: white;
     color: black;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 16px;
   }
   .main-container2 {
     padding: 1rem;
@@ -104,6 +105,7 @@ export default {
   .main-container2 p {
     padding: 1rem 0 0 1.7rem;
     color: black;
+    font-size: 16px;
   }
   .kellyBox {
     padding-top: 0.4rem;
@@ -122,6 +124,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
   }
   .mobileMainImg img{
     width: 400px;

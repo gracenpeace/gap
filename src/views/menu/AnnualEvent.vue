@@ -100,7 +100,10 @@ export default {
   }
   .annualEvent-Container h3 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    font-size: 1.2rem;
+    font-size: 20px;
+  }
+  .annualEvent-Container p {
+    font-size: 15px;
   }
 }
 </style>

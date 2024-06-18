@@ -10,26 +10,26 @@ export default {
     <div class="worshipContents">
       <p class="worshipTitle">주일예배</p>
       <div class="worshipContent">
-        <p>1부 주일학교 교사예배  |  <span class="time">주일 오전 09:00 소예배실(2층)</span></p>
-        <p style="font-size: 12px; padding-bottom: 5px; margin-left: 6%">주로 주일학교를 섬기는 교사들이 먼저 나와서 드립니다.</p>
-        <p>2부 주일예배  |  <span class="time">주일 오전 10:40 본당(1층)</span></p>
-        <p style="font-size: 12px; padding-bottom: 5px; margin-left: 6%">사도적 정통 복음을 선포하며 믿음고백으로 화답하는 예배</p>
-        <p>주일 오후예배 | <span class="time">주일 오후 3:00 본당(1층)</span></p>
-        <p style="font-size: 12px; padding-bottom: 5px; margin-left: 6%">정통과 이단을 분별케 하는 주제별 시리즈 설교</p>
+        <p class="worshipName">1부 주일학교 교사예배 |  <span class="time">주일 오전 09:00 소예배실(2층)</span></p>
+        <p class="worshipPost">주로 주일학교를 섬기는 교사들이 먼저 나와서 드립니다.</p>
+        <p class="worshipName">2부 주일예배  |  <span class="time">주일 오전 10:40 본당(1층)</span></p>
+        <p class="worshipPost">사도적 정통 복음을 선포하며 믿음고백으로 화답하는 예배</p>
+        <p class="worshipName">주일 오후예배 | <span class="time">주일 오후 3:00 본당(1층)</span></p>
+        <p class="worshipPost">정통과 이단을 분별케 하는 주제별 시리즈 설교</p>
       </div>
       <p class="worshipTitle" style="margin-top: 2rem">주중예베</p>
       <div class="worshipContent">
-        <p>수요예배 | <span class="time">수요일 오후 7:30 본당(1층)</span></p>
-        <p style="font-size: 12px; margin-left: 6%">하이델베르크 요리문답 강해설교</p>
+        <p class="worshipName">수요예배 | <span class="time">수요일 오후 7:30 본당(1층)</span></p>
+        <p class="worshipPost">하이델베르크 요리문답 강해설교</p>
       </div>
       <div class="worshipContent">
-        <p>금요 기도회 | <span class="time">금요일 오후 8:30 본당(1층)</span></p>
-        <p style="font-size: 12px; margin-left: 6%">잠언 말씀의 설교 내용으로 믿음 고백과 다짐과 결단과 간절한 간구와 응답을 구하는 기도회</p>
+        <p class="worshipName">금요 기도회 | <span class="time">금요일 오후 8:30 본당(1층)</span></p>
+        <p class="worshipPost" >잠언 말씀의 설교 내용으로 믿음 고백과 다짐과 결단과 간절한 간구와 응답을 구하는 기도회</p>
       </div>
       <p class="worshipTitle" style="margin-top: 2rem">기관예배</p>
       <div class="worshipContent">
-        <p>라온 학생부예배 | <span class="time">토요일 오전 09:00 소예배실(2층)</span></p>
-        <p>우리는 청년예배 | <span class="time">토요일 오전 10:40 본당(1층)</span></p>
+        <p class="worshipName">라온 학생부예배 | <span class="time">토요일 오전 09:00 소예배실(2층)</span></p>
+        <p class="worshipName">우리는 청년예배 | <span class="time">토요일 오전 10:40 본당(1층)</span></p>
       </div>
     </div>
   </div>
@@ -44,28 +44,34 @@ export default {
     color: black;
   }
   .worshipContents {
-    padding: 2rem 0 0 1rem
+    padding: 2rem 0 0 1rem;
+    line-height: 2;
   }
   .worship-container h2 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
     color: black;
   }
   .worshipTitle {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: black;
   }
   .worshipContent {
     margin-top: 0.3rem;
     color: black;
   }
-  .worshipContent p {
+  .worshipName{
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
+    font-size: 1.1rem;
+  }
+  .worshipPost {
+    font-size: 0.9rem; padding-bottom: 5px; margin-left: 6%;
+    font-family: NanumSquareNeo-Variable-Regular,sans-serif;
   }
   .time {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: black;
   }
 }
@@ -77,7 +83,8 @@ export default {
     color: black;
   }
   .worshipContents {
-    padding: 2rem 0 0 1rem
+    padding: 2rem 0 0 1rem;
+    line-height: 1.8;
   }
   .worship-container h2 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
@@ -97,8 +104,16 @@ export default {
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
   }
+  .worshipName{
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    font-size: 15px;
+  }
+  .worshipPost {
+    font-size: 12px; padding-bottom: 5px; margin-left: 6%
+  }
   .time {
-    font-size: 0.8rem;
+    font-size: 11px;
     color: black;
   }
 }

@@ -76,5 +76,42 @@ export default {
     color: black;
     font-size: 1.2rem;
   }
+  .theologyPost{
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .theologyMain {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 5% 150px 5%;
+    background-color: white;
+    height: 900px;
+  }
+  .theologyMain img{
+    width: 30%;
+    background-color: white;
+  }
+  .theologyImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .theologyContent {
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    padding-top: 30px;
+    padding-left: 70px;
+    line-height: 1.8;
+  }
+  .theologyTitle {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    color: black;
+    font-size: 1.5rem;
+  }
+  .theologyPost{
+    font-size: 1.1rem;
+  }
 }
 </style>

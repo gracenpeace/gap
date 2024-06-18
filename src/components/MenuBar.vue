@@ -159,6 +159,7 @@ export default {
     padding: 2.5rem 1.5rem 0 1.5rem;
     color: white;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    z-index: 9999;
   }
   .introduce-container {
     position: relative;
@@ -254,6 +255,7 @@ export default {
     color: white;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
     overflow: auto;
+    z-index: 100;
   }
   .introduce-container {
     position: relative;
