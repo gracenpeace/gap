@@ -61,13 +61,31 @@ export default {
 <style scoped>
 @media screen and (max-width: 1025px) {
   .annualEventMain {
-    padding: 1rem 2.5rem 0 2.5rem;
+    padding: 8rem 2.5rem 150px 4.5rem;
     background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 100%;
+  }
+  .annualEventMain h2 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 2.3rem;
+  }
+  .annualEvent-Container {
+    margin-top: 20px;
+    line-height: 1.8;
+  }
+  .annualEvent-Container h3 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 1.5rem;
+  }
+  .annualEvent-Container p {
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 768px) {
   .annualEventMain {
-    padding: 1rem 2.5rem 150px 2.5rem;
+    padding: 100px 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;

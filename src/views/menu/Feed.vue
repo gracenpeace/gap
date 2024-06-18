@@ -39,7 +39,7 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .feedMain {
-    padding: 2rem 2.5rem 150px 2.5rem;
+    padding: 100px 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;

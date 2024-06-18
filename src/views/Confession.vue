@@ -27,12 +27,30 @@ export default {
 <style scoped>
 @media screen and (max-width: 1025px) {
   .confessionMain {
-    padding: 1rem 2.5rem 0 2.5rem;
+    padding: 8rem 2.5rem 150px 4.5rem;
     background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 900px;
+  }
+  .confessionMain h2 {
+    font-size: 2.5rem;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+  }
+  .creed {
+    margin-top: 10px;
+    padding: 1rem 0 0 1rem;
+    line-height: 1.8;
+  }
+  .creed h2 {
+    font-size: 1.8rem;
+  }
+  .creed p {
+    font-size: 1.3rem;
   }
 }@media screen and (max-width: 768px) {
   .confessionMain {
-    padding: 1rem 2.5rem 150px 2.5rem;
+    padding: 100px 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;

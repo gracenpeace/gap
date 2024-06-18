@@ -8,10 +8,20 @@
     <meta name="keywords" content="교회, 정통교회, 은혜와평강교회" />
     <meta name="author" content="GPS team" />
     <meta property="og:site_name" content="은혜와평강교회" />
-    <meta property="og:title" content="은혜와평강교회 홈페이지" />
+    <meta property="og:title" content="은혜와평강교회" />
     <meta property="og:description" content="사도적 복음을 전하는 은혜와평강교회 입니다."
 />
     <title>은혜와평강교회</title>
+    <script>
+      (function() {
+        // URL 파라미터에서 리다이렉트할 원래 URL을 확인합니다.
+        var params = new URLSearchParams(window.location.search);
+        var redirectUrl = params.get('redirect');
+        if (redirectUrl) {
+          window.history.replaceState(null, null, redirectUrl);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="app"></div>

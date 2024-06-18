@@ -13,6 +13,9 @@ export default {
       <p>은혜와평강교회에 오신 여러분</p>
       <p>사랑하고 축복합니다</p>
     </div>
+    <div class="mobileMainImg">
+      <img src="https://www.dropbox.com/scl/fi/3zgga8jo8jo19absbhpky/IMG_4986.jpg?rlkey=fcfpar7fa6qamydpvwiszw3cb&st=70ys94mk&raw=1" alt="">
+    </div>
     <div class="main-container2">
       <p>이번주 말씀</p>
       <div class="kellyBox">
@@ -28,28 +31,37 @@ export default {
     flex : 1;
     overflow-y: auto;
     padding-bottom: 90px;
-    /*height: 800px;*/
+    padding-top: 65px;
+  }
+  .mobileMainImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .mobileMainImg img{
+    width: 80%;
   }
   .main-container1 {
-    padding: 1rem 0 0 2.5rem;
+    padding: 2rem 3.5rem 0 3.5rem;
     width: 100%;
-    height: 190px;
     background-color: white;
     color: black;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 20px;
   }
   .main-container2 {
-    padding: 1rem;
+    padding: 1rem 3.5rem 0 3.5rem;
     width: 100%;
     height: fit-content;
     background-color: #DCDCDC;
     padding-bottom: 100px;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-
+    
   }
   .main-container2 p {
-    padding: 1rem 0 0 1.7rem;
     color: black;
+    font-size: 20px
   }
   .kellyBox {
     padding-top: 0.4rem;
@@ -75,7 +87,7 @@ export default {
   .main-container1 {
     padding: 1rem 0 0 2.5rem;
     width: 100%;
-    height: 190px;
+    height: 90px;
     background-color: white;
     color: black;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
@@ -106,6 +118,14 @@ export default {
   .mainBgBox {
     display: none;
   }
+  .mobileMainImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobileMainImg img{
+    width: 400px;
+  }
 }
 @media screen and (min-width: 1025px) {
   .main-container {
@@ -114,6 +134,9 @@ export default {
     position: relative;
     margin: 0 auto;
     padding-bottom: 30px;
+  }
+  .mobileMainImg {
+    display: none;
   }
   .mainBgBox {
     width: 1200px;

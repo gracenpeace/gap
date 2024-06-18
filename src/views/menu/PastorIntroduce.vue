@@ -24,13 +24,35 @@ export default {
 <style scoped>
 @media screen and (max-width: 1025px) {
   .PastorIntroduceMain {
-    padding: 1rem 2.5rem 0 2.5rem;
+    padding: 8rem 2.5rem 150px 4.5rem;
     background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 900px;
+  }
+  .image-container{
+    width:200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .profile-container {
+    margin-top: 2rem;
+    line-height: 1.8;
+  }
+  .image-container h2, .profile-container h3 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 1.8rem;
+  }
+  .profile-container p {
+    font-size: 1.3rem;
   }
 }
 @media screen and (max-width: 768px) {
   .PastorIntroduceMain {
-    padding: 1rem 2.5rem 150px 2.5rem;
+    padding: 100px 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;

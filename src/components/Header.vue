@@ -1,5 +1,5 @@
 <script>
-import MenuBar from "@/views/menu/MenuBar.vue";
+import MenuBar from "@/components/MenuBar.vue";
 
 export default {
   name: 'Header',
@@ -35,6 +35,8 @@ export default {
     padding : 0.7rem 0 0.5rem 0.8rem;
     background-color: white;
     display: flex;
+    position: fixed;
+    top: 0;
   }
   .headerImg img {
     width: 30%;
@@ -46,6 +48,8 @@ export default {
     padding : 0.7rem 0 0.5rem 0.8rem;
     background-color: white;
     display: flex;
+    position: fixed;
+    top: 0;
   }
   .headerImg img {
     width: 40%;

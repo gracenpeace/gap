@@ -19,13 +19,24 @@ export default {
 <style scoped>
 @media screen and (max-width: 1025px) {
   .visionMain {
-    padding: 1rem 2.5rem 0 2.5rem;
+    padding: 8rem 2.5rem 150px 2.5rem;
     background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 900px;
+  }
+  .visionMain h1 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+  }
+  .visionMain p {
+    line-height: 2.1;
+    font-size: 1.3rem;
+    margin-top: 25px;
   }
 }
 @media screen and (max-width: 768px) {
   .visionMain {
-    padding: 2rem 2.5rem 150px 2.5rem;
+    padding: 100px 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;

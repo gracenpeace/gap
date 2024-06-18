@@ -38,22 +38,40 @@ export default {
 <style scoped>
 @media screen and (max-width: 1025px) {
   .worship-container {
-    padding: 1rem 2.5rem 0 2.5rem;
+    padding: 8rem 2.5rem 150px 3.5rem;
     background-color: white;
+    height: 100%;
     color: black;
   }
+  .worshipContents {
+    padding: 2rem 0 0 1rem
+  }
   .worship-container h2 {
-    font-family: NanumSquareNeo-Variable-Heavy,sans-serif;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 1.7rem;
     color: black;
   }
   .worshipTitle {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 1.3rem;
+    color: black;
+  }
+  .worshipContent {
+    margin-top: 0.3rem;
+    color: black;
+  }
+  .worshipContent p {
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+  }
+  .time {
+    font-size: 0.8rem;
     color: black;
   }
 }
 @media screen and (max-width: 768px) {
   .worship-container {
-    padding: 1rem 2.5rem 150px 1.5rem;
+    padding: 100px 2.5rem 150px 1.5rem;
     background-color: white;
     height: 100%;
     color: black;
