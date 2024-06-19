@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "ServePerson",
+  name: 'ServePerson'
 }
 </script>
 
@@ -38,103 +38,103 @@ export default {
     <div class="serveDivision">
       <h3>중직자</h3>
       <h4>장로</h4>
-      <div style="display: flex;">
+      <div style="display: flex">
         <div class="leader">
           <p>이미지</p>
-          <p class="name">조강현</p>
+          <p class="name">조강현 장로</p>
         </div>
         <div class="leader">
           <p>이미지</p>
-          <p class="name">주명수</p>
+          <p class="name">주명수 장로</p>
         </div>
       </div>
       <h4>안수집사</h4>
-      <div style="display: flex;">
+      <div style="display: flex">
         <div class="leader">
           <p>이미지</p>
-          <p class="name">김경원</p>
+          <p class="name">김경원 안수집사</p>
         </div>
         <div class="leader">
           <p>이미지</p>
-          <p class="name">장춘식</p>
+          <p class="name">장춘식 안수집사</p>
         </div>
       </div>
       <h4>권사</h4>
-      <div style="display: flex;">
+      <div style="display: flex">
         <div class="leader">
           <p>이미지</p>
-          <p class="name">김경숙</p>
+          <p class="name">김경숙 권사</p>
         </div>
         <div class="leader">
           <p>이미지</p>
-          <p class="name">정맹숙</p>
-        </div>
-      </div>
-      <div style="display: flex;">
-        <div class="leader">
-          <p>이미지</p>
-          <p class="name">정진희</p>
-        </div>
-        <div class="leader">
-          <p>이미지</p>
-          <p class="name">모미화</p>
+          <p class="name">정맹숙 권사</p>
         </div>
       </div>
-      <div style="display: flex;">
+      <div style="display: flex">
         <div class="leader">
           <p>이미지</p>
-          <p class="name">한민아</p>
+          <p class="name">정진희 권사</p>
         </div>
         <div class="leader">
           <p>이미지</p>
-          <p class="name">유수진</p>
+          <p class="name">모미화 권사</p>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div class="leader">
+          <p>이미지</p>
+          <p class="name">한민아 권사</p>
+        </div>
+        <div class="leader">
+          <p>이미지</p>
+          <p class="name">유수진 권사</p>
         </div>
       </div>
       <div class="leader">
         <p>이미지</p>
-        <p class="name">유병수</p>
+        <p class="name">유병수 권사</p>
       </div>
     </div>
     <div class="serveDivision">
       <h3>목장장</h3>
-      <div style="display: flex;">
+      <div style="display: flex">
         <div class="leader">
           <p>이미지</p>
-          <p class="name">사랑목장 조강현</p>
+          <p class="name">사랑목장 조강현 목장장</p>
         </div>
         <div class="leader">
           <p>이미지</p>
-          <p class="name">푸른목장 주명수</p>
-        </div>
-      </div>
-      <div style="display: flex;">
-        <div class="leader">
-          <p>이미지</p>
-          <p class="name">평강목장 장춘식</p>
-        </div>
-        <div class="leader">
-          <p>이미지</p>
-          <p class="name">OK목장 김경원</p>
+          <p class="name">푸른목장 주명수 목장장</p>
         </div>
       </div>
-      <div style="display: flex;">
+      <div style="display: flex">
         <div class="leader">
           <p>이미지</p>
-          <p class="name">은혜목장 한성수</p>
+          <p class="name">평강목장 장춘식 목장장</p>
         </div>
         <div class="leader">
           <p>이미지</p>
-          <p class="name">쉴만한목장 신재섭</p>
+          <p class="name">OK목장 김경원 목장장</p>
         </div>
       </div>
-      <div style="display: flex;">
+      <div style="display: flex">
         <div class="leader">
           <p>이미지</p>
-          <p class="name">믿음목장 김태환</p>
+          <p class="name">은혜목장 한성수 목장장</p>
         </div>
         <div class="leader">
           <p>이미지</p>
-          <p class="name">온유목장 이성웅</p>
+          <p class="name">쉴만한목장 신재섭 목장장</p>
+        </div>
+      </div>
+      <div style="display: flex">
+        <div class="leader">
+          <p>이미지</p>
+          <p class="name">믿음목장 김태환 목장장</p>
+        </div>
+        <div class="leader">
+          <p>이미지</p>
+          <p class="name">온유목장 이성웅 목장장</p>
         </div>
       </div>
     </div>
@@ -152,12 +152,14 @@ export default {
   .servePersonMain {
     padding: 100px 2.5rem 150px 2.5rem;
     background-color: white;
-    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    font-family: NanumSquareNeo-Variable-Bold, sans-serif;
     color: black;
     height: 100%;
   }
-  .servePersonMain h2, .serveDivision h3, .serveDivision h4 {
-    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+  .servePersonMain h2,
+  .serveDivision h3,
+  .serveDivision h4 {
+    font-family: NanumSquareNeo-Variable-ExtraBold, sans-serif;
   }
   .servePersonMain h2 {
     font-size: 25px;
@@ -168,11 +170,11 @@ export default {
   }
   .serveDivision h3 {
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 5px;
   }
   .serveDivision h4 {
     font-size: 17px;
-    padding-left: 40px;
+    padding-left: 10px;
   }
   .leader {
     width: 62%;
@@ -182,7 +184,7 @@ export default {
     padding-bottom: 15px;
   }
   .name {
-    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-family: NanumSquareNeo-Variable-ExtraBold, sans-serif;
     font-size: 15px;
   }
   .team {

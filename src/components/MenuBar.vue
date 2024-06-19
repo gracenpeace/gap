@@ -462,7 +462,7 @@ export default {
     top: 4rem;
     left: 0;
     opacity: 0.9;
-    padding: 2.5rem 1.5rem 250px 1.5rem;
+    padding: 2.5rem 1.5rem 400px 1.5rem;
     color: white;
     font-family: NanumSquareNeo-Variable-ExtraBold, sans-serif;
     overflow: auto;
