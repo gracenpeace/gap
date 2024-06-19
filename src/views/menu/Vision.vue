@@ -19,7 +19,7 @@ export default {
 <style scoped>
 @media screen and (max-width: 1025px) {
   .visionMain {
-    padding: 8rem 2.5rem 150px 2.5rem;
+    padding: 8rem 5.5rem 150px 5.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;

@@ -11,7 +11,7 @@ export default {
       <iframe
           id="player"
           type="text/html"
-          src="https://www.youtube.com/embed/YYgcq2RCIvQ"
+          src="https://www.youtube.com/embed/YYgcq2RCIvQ?wmode=transparent"
           allowfullscreen
       ></iframe>
     </div>

@@ -151,7 +151,7 @@ export default {
     position: absolute;
     background-color: #2E4184;
     width: 100%;
-    height: 1200px;
+    height: 1500px;
     margin: auto;
     top: 6rem;
     left: 0;

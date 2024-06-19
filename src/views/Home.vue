@@ -38,12 +38,14 @@ export default {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    background-color: white;
   }
   .mobileMainImg img{
     width: 80%;
+    background-color: white;
   }
   .main-container1 {
-    padding: 2rem 3.5rem 0 3.5rem;
+    padding: 6rem 3.5rem 0 3.5rem;
     width: 100%;
     background-color: white;
     color: black;
@@ -125,9 +127,11 @@ export default {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    background-color: white;
   }
   .mobileMainImg img{
     width: 400px;
+    background-color: white;
   }
 }
 @media screen and (min-width: 1025px) {

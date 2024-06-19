@@ -41,6 +41,7 @@ export default {
   .profile-container {
     margin-top: 2rem;
     line-height: 1.8;
+    padding-left: 50px;;
   }
   .image-container h2, .profile-container h3 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
@@ -69,6 +70,7 @@ export default {
   .profile-container {
     margin-top: 2rem;
     line-height: 1.8;
+    padding-left: 10px;
   }
   .image-container h2 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
