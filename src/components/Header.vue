@@ -58,7 +58,7 @@ export default {
 }
 @media screen and (min-width: 1025px) {
   .headerImg {
-    /*width: 1200px;*/
+    width: 100%;
     height: 100px;
     padding : 0.7rem 0 0.5rem 0.8rem;
     background-color: white;

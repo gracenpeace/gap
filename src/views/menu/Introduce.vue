@@ -11,7 +11,7 @@ export default {
       <iframe
           id="player"
           type="text/html"
-          src="https://www.youtube.com/embed/YYgcq2RCIvQ?wmode=transparent"
+          src="https://www.youtube.com/embed/YYgcq2RCIvQ?wmode=opque"
           allowfullscreen
       ></iframe>
     </div>
@@ -32,23 +32,16 @@ export default {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
   }
   .video-wrapper {
+    padding-top: 50px;
     position: relative;
     padding-bottom: 56.25%; /* 16:9 비율 */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-    margin: 0 auto;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    border: 0;
-    z-index: 1;
+    height: 380px;
   }
 }
 @media screen and (max-width: 768px) {

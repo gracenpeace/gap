@@ -42,42 +42,42 @@ export default {
   <div class="navBox" :class="{'fixed' : isFixed}" ref="navbar">
     <ul class="navUl">
       <li @mouseenter="addDropDown" @mouseleave="removeDropDown">
-        <span href=""  style="font-size: 20px; cursor: pointer;">교회소개</span>
+        <span href=""  style="font-size: 20px; cursor: pointer;" >교회소개</span>
         <div class="weUl1" :class="{'isDropDown' : isDropDown}"  >
-          <router-link to="/introduce">교회 소개</router-link>
-          <router-link to="/pastorIntroduce">목사님 소개</router-link>
-          <router-link to="/vision">목회 비전</router-link>
-          <router-link to="/servePerson">섬기는이</router-link>
-          <router-link to="/worship">예배 안내</router-link>
-          <router-link to="/map">오시는길</router-link>
-          <router-link to="/annualEvent">연간 행사</router-link>
+          <router-link to="/introduce" exact-active-class="now-page">교회 소개</router-link>
+          <router-link to="/pastorIntroduce" exact-active-class="now-page">목사님 소개</router-link>
+          <router-link to="/vision" exact-active-class="now-page">목회 비전</router-link>
+          <router-link to="/servePerson" exact-active-class="now-page">섬기는이</router-link>
+          <router-link to="/worship" exact-active-class="now-page">예배 안내</router-link>
+          <router-link to="/map" exact-active-class="now-page">오시는길</router-link>
+          <router-link to="/annualEvent" exact-active-class="now-page">연간 행사</router-link>
         </div>
       </li>
       <li>
-        <router-link to="/theology">정통신학</router-link>
+        <router-link to="/theology" exact-active-class="now-page">정통신학</router-link>
       </li>
       <li>
-        <router-link to="/life">신앙의삶</router-link>
+        <router-link to="/life" exact-active-class="now-page">신앙의삶</router-link>
       </li>
       <li>
-        <router-link to="/confession">신앙고백</router-link>
+        <router-link to="/confession" exact-active-class="now-page">신앙고백</router-link>
       </li>
       <li style="width: 90px;">
-        <router-link to="/heresy">이단</router-link>
+        <router-link to="/heresy" exact-active-class="now-page">이단</router-link>
       </li>
       <li @mouseenter="addDropDown2" @mouseleave="removeDropDown2" style="width: 150px">
         <span href=""  style="font-size: 20px; cursor: pointer;">다음세대 세움</span>
         <div class="weUl2" :class="{'isDropDown' : isDropDown2}"  >
-          <router-link to="/sundaySchool">주일학교</router-link>
-          <router-link to="/raonStudents">라온 학생부</router-link>
-          <router-link to="/weareYoute">우리는 청년부</router-link>
+          <router-link to="/sundaySchool" exact-active-class="now-page">주일학교</router-link>
+          <router-link to="/raonStudents" exact-active-class="now-page">라온 학생부</router-link>
+          <router-link to="/weareYoute" exact-active-class="now-page">우리는 청년부</router-link>
         </div>
       </li>
       <li style="width: 100px;">
-        <router-link to="/feed">양육</router-link>
+        <router-link to="/feed" exact-active-class="now-page">양육</router-link>
       </li>
       <li style="width: 80px">
-        <router-link to="/consulting">상담</router-link>
+        <router-link to="/consulting" exact-active-class="now-page">상담</router-link>
       </li>
     </ul>
   </div>
@@ -133,7 +133,7 @@ li {
     transition: opacity 0.5s ease, visibility 0.5s ease;
     margin-top: 18px;
     margin-left: 4px;
-    z-index: 1;
+    z-index: 10;
   }
   .weUl2 {
     font-family: 'NanumSquareNeo-Variable-Regular',sans-serif;
@@ -146,7 +146,7 @@ li {
     transition: opacity 0.5s ease, visibility 0.5s ease;
     margin-top: 18px;
     margin-left: 18px;
-    z-index: 1;
+    z-index: 10;
   }
   .weUl1 a, .weUl2 a {
     display: block;
@@ -165,6 +165,12 @@ li {
     top: 0;
     z-index: 1000;
     left : 0;
+  }
+  .now-page {
+    color: goldenrod !important;
+  }
+  li:has(.now-page) > span {
+    color: goldenrod !important;
   }
 }
 </style>

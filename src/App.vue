@@ -25,10 +25,10 @@ export default {
 </script>
 
 <template>
-  <Header :menuOpen="menuOpen"  @toggleMenu="toggleMenu"/>
+  <Header :menuOpen="menuOpen"  @toggleMenu="toggleMenu" style="z-index: 100;"/>
   <Nav/>
-  <router-view/>
-  <Footer @routeChanged="closeMenu"/>
+  <router-view style="z-index: 1;"/>
+  <Footer @routeChanged="closeMenu" style="z-index: 50;"/>
 </template>
 
 <style>
