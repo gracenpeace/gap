@@ -101,7 +101,7 @@ export default {
   }
   .video-wrapper iframe {
     width: 800px;
-    height: 480px;
+    height: 452px;
   }
 }
 </style>

@@ -84,4 +84,37 @@ export default {
     font-size: 15px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .PastorIntroduceMain {
+    padding: 50px 5% 240px 5%;
+    background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 900px;
+  }
+  .image-container{
+    width:180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .profile-container {
+    margin-top: 2rem;
+    line-height: 1.8;
+    padding-left: 25%;
+  }
+  .image-container h2 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 23px;
+  }
+  .profile-container h3 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 20px;
+  }
+  .profile-container p {
+    font-size: 15px;
+  }
+}
 </style>

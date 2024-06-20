@@ -7,9 +7,9 @@ export default {
 <template>
 <div class="confessionMain">
   <div class="confessionImgBox">
-    <img src="https://www.dropbox.com/scl/fi/o6u136rwrc8ux8w36h17m/confession1.jpg?rlkey=0fjhw8zxzxbpdlqu4rxbs7glp&st=w945ieeu&raw=1" alt="">
+    <img src="https://www.dropbox.com/scl/fi/3pqfvhozr9nh9qs6ptvz8/confession1.jpg?rlkey=i96137425e878cmjity0wiev5&st=0m81s7wm&raw=1" alt="">
   </div>
-  <h2>신앙고백</h2>
+  <h2 class="confessionMainH2">신앙고백</h2>
   <div class="creed">
     <h2>고대신조</h2>
     <p>1. 사도신조</p>
@@ -36,6 +36,15 @@ export default {
     color: black;
     height: 100%;
   }
+  .confessionImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .confessionImgBox img {
+    width: 65%;
+    padding-bottom: 30px;
+  }
   .confessionMain h2 {
     font-size: 2.5rem;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
@@ -53,7 +62,7 @@ export default {
   }
 }@media screen and (max-width: 768px) {
   .confessionMain {
-    padding: 30px 2.5rem 150px 2.5rem;
+    padding: 100px 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
@@ -65,7 +74,8 @@ export default {
     align-items: center;
   }
   .confessionImgBox img {
-    width: 92%;
+    width: 75%;
+    padding-bottom: 20px;
   }
   .confessionMain h2 {
     font-size: 1.7rem;
@@ -80,6 +90,43 @@ export default {
   }
   .creed p {
     font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .confessionMain {
+    padding: 50px 5% 150px 5%;
+    background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 100%;
+  }
+  .confessionImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .confessionImgBox img {
+    width: 40%;
+    padding-bottom: 30px;
+  }
+  .confessionMain h2 {
+    font-size: 30px;
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+  }
+  .confessionMainH2 {
+    padding-left: 17%;
+  }
+  .creed {
+    padding-top: 10px;
+    padding: 1rem 0 0 1rem;
+    line-height: 1.8;
+    padding-left: 20%;
+  }
+  .creed h2 {
+    font-size: 25px;
+  }
+  .creed p {
+    font-size: 1.3rem;
   }
 }
 </style>

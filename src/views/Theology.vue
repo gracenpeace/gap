@@ -89,7 +89,7 @@ export default {
     height: 900px;
   }
   .theologyMain img{
-    width: 30%;
+    width: 20%;
     background-color: white;
   }
   .theologyImgBox {
@@ -102,7 +102,7 @@ export default {
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
     padding-top: 30px;
-    padding-left: 70px;
+    padding-left: 15%;
     line-height: 1.8;
   }
   .theologyTitle {
