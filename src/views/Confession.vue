@@ -34,7 +34,7 @@ export default {
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
-    height: 900px;
+    height: 100%;
   }
   .confessionMain h2 {
     font-size: 2.5rem;

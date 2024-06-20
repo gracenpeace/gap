@@ -44,7 +44,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    padding-top: 80px;
     background-color: white;
   }
   .mobileMainImg img {
@@ -52,7 +52,7 @@ export default {
     background-color: white;
   }
   .main-container1 {
-    padding: 6rem 3.5rem 0 3.5rem;
+    padding: 8rem 3.5rem 0 3.5rem;
     width: 100%;
     background-color: white;
     color: black;
