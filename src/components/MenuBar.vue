@@ -457,15 +457,15 @@ export default {
     position: absolute;
     background-color: #2e4184;
     width: 100%;
-    height: 2000px;
+    height: calc(100vh - 4rem);
     margin: auto;
     top: 4rem;
     left: 0;
     opacity: 0.9;
-    padding: 2.5rem 1.5rem 700px 1.5rem;
+    padding: 2.5rem 1.5rem 150px 1.5rem;
     color: white;
     font-family: NanumSquareNeo-Variable-ExtraBold, sans-serif;
-    overflow: auto;
+    overflow-y: auto;
     z-index: 100;
   }
   .introduce-container {
