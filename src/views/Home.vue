@@ -89,7 +89,7 @@ export default {
   .main-container {
     flex: 1;
     overflow-y: auto;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
     /*height: 800px;*/
   }
   .main-container1 {
