@@ -26,6 +26,10 @@ export default {
       const navbar = this.$refs.navbar;
       this.isFixed = window.scrollY  > navbar.offsetTop;
     },
+    deleteDropDown() {
+      this.isDropDown = false;
+      this.isDropDown2 = false
+    }
   },
   mounted() {
     // 스크롤 이벤트에 핸들러를 추가
@@ -44,13 +48,13 @@ export default {
       <li @mouseenter="addDropDown" @mouseleave="removeDropDown">
         <span href=""  style="font-size: 20px; cursor: pointer;" >교회소개</span>
         <div class="weUl1" :class="{'isDropDown' : isDropDown}"  >
-          <router-link to="/introduce" exact-active-class="now-page">교회 소개</router-link>
-          <router-link to="/pastorIntroduce" exact-active-class="now-page">목사님 소개</router-link>
-          <router-link to="/vision" exact-active-class="now-page">목회 비전</router-link>
-          <router-link to="/servePerson" exact-active-class="now-page">섬기는이</router-link>
-          <router-link to="/worship" exact-active-class="now-page">예배 안내</router-link>
-          <router-link to="/map" exact-active-class="now-page">오시는길</router-link>
-          <router-link to="/annualEvent" exact-active-class="now-page">연간 행사</router-link>
+          <router-link to="/introduce" exact-active-class="now-page" @click="deleteDropDown">교회 소개</router-link>
+          <router-link to="/pastorIntroduce" exact-active-class="now-page" @click="deleteDropDown">목사님 소개</router-link>
+          <router-link to="/vision" exact-active-class="now-page" @click="deleteDropDown">목회 비전</router-link>
+          <router-link to="/servePerson" exact-active-class="now-page" @click="deleteDropDown">섬기는이</router-link>
+          <router-link to="/worship" exact-active-class="now-page" @click="deleteDropDown">예배 안내</router-link>
+          <router-link to="/map" exact-active-class="now-page" @click="deleteDropDown">오시는길</router-link>
+          <router-link to="/annualEvent" exact-active-class="now-page" @click="deleteDropDown">연간 행사</router-link>
         </div>
       </li>
       <li>
@@ -68,9 +72,9 @@ export default {
       <li @mouseenter="addDropDown2" @mouseleave="removeDropDown2" style="width: 150px">
         <span href=""  style="font-size: 20px; cursor: pointer;">다음세대 세움</span>
         <div class="weUl2" :class="{'isDropDown' : isDropDown2}"  >
-          <router-link to="/sundaySchool" exact-active-class="now-page">주일학교</router-link>
-          <router-link to="/raonStudents" exact-active-class="now-page">라온 학생부</router-link>
-          <router-link to="/weareYoute" exact-active-class="now-page">우리는 청년부</router-link>
+          <router-link to="/sundaySchool" exact-active-class="now-page" @click="deleteDropDown">주일학교</router-link>
+          <router-link to="/raonStudents" exact-active-class="now-page" @click="deleteDropDown">라온 학생부</router-link>
+          <router-link to="/weareYoute" exact-active-class="now-page" @click="deleteDropDown">우리는 청년부</router-link>
         </div>
       </li>
       <li style="width: 100px;">
