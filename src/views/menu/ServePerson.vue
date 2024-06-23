@@ -15,12 +15,16 @@ export default {
         <p class="team">우리는 청년부</p>
       </div>
       <div class="leader">
-        <p>이미지</p>
+        <div class="leaderLengthImgContainer">
+          <img src="https://www.dropbox.com/scl/fi/dlnim4lw211ur30k8vm2a/sunhui.jpg?rlkey=az4hi2ip60085nevpb6ogjjmf&raw=1" alt="">
+        </div>
         <p class="name">이선희 전도사</p>
         <p class="team">주일학교</p>
       </div>
       <div class="leader">
-        <p>이미지</p>
+        <div class="leaderLengthImgContainer">
+          <img src="https://www.dropbox.com/scl/fi/53ur9pc3lyic2rxuqrt3w/hanna.jpg?rlkey=jutsax8bjd690hqjuaaiaj143&raw=1" alt="">
+        </div>
         <p class="name">이한나 전도사</p>
         <p class="team">이단 상담</p>
       </div>
@@ -32,7 +36,9 @@ export default {
         <p class="team">라온 학생부</p>
       </div>
       <div class="leader">
-        <p>이미지</p>
+        <div class="leaderLengthImgContainer">
+          <img src="https://www.dropbox.com/scl/fi/zswurpfbkvuwbvhqjy3ea/yoonmi.jpg?rlkey=oa4lggaux6frn4pn3ykzyg15s&raw=1" alt="">
+        </div>
         <p class="name">홍윤미 간사</p>
         <p class="team">우리는 청년부</p>
       </div>
@@ -42,7 +48,9 @@ export default {
       <h4>장로</h4>
       <div class="serveDiv">
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/i8jgabe2dbeph96p1vzdq/ganghyun.jpg?rlkey=bwd0c12s8qba1eh91u697xbr1&raw=1" alt="">
+          </div>
           <p class="name">조강현 장로</p>
         </div>
         <div class="leader">
@@ -57,14 +65,18 @@ export default {
           <p class="name">김경원 안수집사</p>
         </div>
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/34kexohq2t54llts8sq7t/chunsik.jpg?rlkey=i00px94dsmqtha3brox0war1w&raw=1" alt="">
+          </div>
           <p class="name">장춘식 안수집사</p>
         </div>
       </div>
       <h4>권사</h4>
       <div class="serveDiv">
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/o4iwkx5kto4n8u3d3mlfz/kyongsook.jpg?rlkey=gkpfpf00yr7htkmrtkrvu8z02&raw=1" alt="">
+          </div>
           <p class="name">김경숙 권사</p>
         </div>
         <div class="leader">
@@ -74,17 +86,23 @@ export default {
       </div>
       <div class="serveDiv">
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/vcorrafft9lytzo7qpktc/jinhui.jpg?rlkey=lkkjzc5tonjhmdzvtinrekfwr&raw=1" alt="">
+          </div>
           <p class="name">정진희 권사</p>
         </div>
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/vquwfaovie3zfjdysmc0d/mihwa.jpg?rlkey=ds35ioi2vynzwmmf41vum8mig&raw=1" alt="">
+          </div>
           <p class="name">모미화 권사</p>
         </div>
       </div>
       <div class="serveDiv">
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/c74xmbe3wdd8cdyyzjolx/mina.jpg?rlkey=7zf7w42287ekpvkulm1f3gmvf&raw=1" alt="">
+          </div>
           <p class="name">한민아 권사</p>
         </div>
         <div class="leader">
@@ -101,7 +119,9 @@ export default {
       <h3>목장장</h3>
       <div class="serveDiv">
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/i8jgabe2dbeph96p1vzdq/ganghyun.jpg?rlkey=bwd0c12s8qba1eh91u697xbr1&raw=1" alt="">
+          </div>
           <p class="name">사랑목장 조강현</p>
         </div>
         <div class="leader">
@@ -111,7 +131,9 @@ export default {
       </div>
       <div class="serveDiv">
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/34kexohq2t54llts8sq7t/chunsik.jpg?rlkey=i00px94dsmqtha3brox0war1w&raw=1" alt="">
+          </div>
           <p class="name">평강목장 장춘식</p>
         </div>
         <div class="leader">
@@ -121,7 +143,9 @@ export default {
       </div>
       <div class="serveDiv">
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/51e20tj4qat3d9vusqb39/seongsoo.jpg?rlkey=f48q8xanaxusk0gvo8y1sory1&raw=1" alt="">
+          </div>
           <p class="name">은혜목장 한성수</p>
         </div>
         <div class="leader">
@@ -137,7 +161,9 @@ export default {
           <p class="name">믿음목장 김태환</p>
         </div>
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/vzph5twuythpix43rk0t5/sungwoong.jpg?rlkey=jcc9k3rqeu0qy8ncfalmrovro&raw=1" alt="">
+          </div>
           <p class="name">온유목장 이성웅</p>
         </div>
       </div>
