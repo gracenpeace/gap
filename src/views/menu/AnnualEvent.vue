@@ -1,6 +1,21 @@
 <script>
 export default {
   name: "AnnualEvent",
+  data() {
+    return {
+      modalStates: Array(17).fill(false) // 초기화: 7개의 false 값
+    }
+  },
+  methods: {
+    toggleModal(index) {
+      // 현재 인덱스의 모달 상태를 반전
+      const newState = !this.modalStates[index];
+      // 모든 모달 상태를 false로 초기화
+      this.modalStates = this.modalStates.map(() => false);
+      // 클릭된 모달의 상태를 설정
+      this.modalStates[index] = newState;
+    }
+  }
 }
 </script>
 
@@ -10,10 +25,58 @@ export default {
     <div class="annualEvent-Container">
       <h3>1월</h3>
       <p>신년감사예배, 단기선교, 직분자 양육</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(0)" :class="{ active: modalStates[0] }">
+          <img src="https://www.dropbox.com/scl/fi/rast0n1q99trd1eqn0vyn/2024-57234991078.jpg?rlkey=8h5su9d53wri81bzoni3aaggs&st=v687bw2h&raw=1" alt="">
+        </div>
+        <div class="imgContainer" @click="toggleModal(1)" :class="{ active: modalStates[1] }">
+          <img src="https://www.dropbox.com/scl/fi/s1hk2pmwag37z4zseo0ng/2024-57234991083.jpg?rlkey=38glnezi4x27axj51lnxqebpu&st=unupvped&raw=1" alt="">
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[0]">
+        <img src="https://www.dropbox.com/scl/fi/rast0n1q99trd1eqn0vyn/2024-57234991078.jpg?rlkey=8h5su9d53wri81bzoni3aaggs&st=v687bw2h&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[1]">
+        <img src="https://www.dropbox.com/scl/fi/s1hk2pmwag37z4zseo0ng/2024-57234991083.jpg?rlkey=38glnezi4x27axj51lnxqebpu&st=unupvped&raw=1" alt="">
+      </div>
     </div>
     <div class="annualEvent-Container">
       <h3>2월</h3>
-      <p>동계 수련회, 스키캠프</p>
+      <p>전교인 겨울 수련회, 스키캠프</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(2)" :class="{ active: modalStates[2] }">
+          <img src="https://www.dropbox.com/scl/fi/e7d433icvmj7x54qw92r6/20240301-240303-58649710673.jpg?rlkey=xidhc3his2iloxfwmmtvdncyi&st=5hkcn053&raw=1" alt="">
+        </div>
+        <div class="imgContainer" @click="toggleModal(3)" :class="{ active: modalStates[3] }">
+          <img src="https://www.dropbox.com/scl/fi/65mbh2z7q18nekso77wsm/20240301-240303-58649639747.jpg?rlkey=c1qq6r06yl316ljhlm5hdxpk8&st=uflz657j&raw=1" alt="">
+        </div>
+      </div>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(4)" :class="{ active: modalStates[4] }">
+          <img src="https://www.dropbox.com/scl/fi/r1ybaum1p0dw40pxlhewk/2024-2_15-2_17-57543759716.jpg?rlkey=g9pvng71tn1fyphfgecs7mtxo&st=a4brxbt2&raw=1" alt="">
+        </div>
+        <div class="imgContainer" @click="toggleModal(5)" :class="{ active: modalStates[5] }">
+          <img src="https://www.dropbox.com/scl/fi/iao0g51v7gbidxnobk5i3/2024-2_15-2_17-57540335014.jpg?rlkey=7ulau2j4utcsaea72j7gcesny&st=obxvp648&raw=1" alt="">
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[2]">
+        <img src="https://www.dropbox.com/scl/fi/e7d433icvmj7x54qw92r6/20240301-240303-58649710673.jpg?rlkey=xidhc3his2iloxfwmmtvdncyi&st=5hkcn053&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[3]">
+        <img src="https://www.dropbox.com/scl/fi/65mbh2z7q18nekso77wsm/20240301-240303-58649639747.jpg?rlkey=c1qq6r06yl316ljhlm5hdxpk8&st=uflz657j&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[4]">
+        <img src="https://www.dropbox.com/scl/fi/r1ybaum1p0dw40pxlhewk/2024-2_15-2_17-57543759716.jpg?rlkey=g9pvng71tn1fyphfgecs7mtxo&st=a4brxbt2&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[5]">
+        <img src="https://www.dropbox.com/scl/fi/iao0g51v7gbidxnobk5i3/2024-2_15-2_17-57540335014.jpg?rlkey=7ulau2j4utcsaea72j7gcesny&st=obxvp648&raw=1" alt="">
+      </div>
     </div>
     <div class="annualEvent-Container">
       <h3>3월</h3>
@@ -22,10 +85,66 @@ export default {
     <div class="annualEvent-Container">
       <h3>4월</h3>
       <p>부활주일감사예배, 행복나눔축제예배</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(6)" :class="{ active: modalStates[6] }">
+          <img src="https://www.dropbox.com/scl/fi/11j5rpo3ku6e6sry2j51z/240331-58597321641.jpg?rlkey=k2qh94dwl4c0ybsdzn43j3zdz&st=1ikitr8u&raw=1" alt="">
+        </div>
+        <div class="imgContainer" @click="toggleModal(7)" :class="{ active: modalStates[7] }">
+          <img src="https://www.dropbox.com/scl/fi/jwx46iz8gf81zxudv769z/240331-58896946761.jpg?rlkey=rpu0rt326ig3n8pzm0jw4ah6r&st=bmmpenle&raw=1" alt="">
+        </div>
+      </div>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(8)" :class="{ active: modalStates[8] }">
+          <img src="https://www.dropbox.com/scl/fi/8jnkepkdhqvfvttkx6zj3/240331-58896972309.jpg?rlkey=upee8jy44n6soxkyv2ozh3ezz&st=yqg6dsxr&raw=1" alt="">
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[6]">
+        <img src="https://www.dropbox.com/scl/fi/11j5rpo3ku6e6sry2j51z/240331-58597321641.jpg?rlkey=k2qh94dwl4c0ybsdzn43j3zdz&st=1ikitr8u&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[7]">
+        <img src="https://www.dropbox.com/scl/fi/jwx46iz8gf81zxudv769z/240331-58896946761.jpg?rlkey=rpu0rt326ig3n8pzm0jw4ah6r&st=bmmpenle&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[8]">
+        <img src="https://www.dropbox.com/scl/fi/8jnkepkdhqvfvttkx6zj3/240331-58896972309.jpg?rlkey=upee8jy44n6soxkyv2ozh3ezz&st=yqg6dsxr&raw=1" alt="">
+      </div>
     </div>
     <div class="annualEvent-Container">
       <h3>5월</h3>
       <p>가정주간 감사예배(어린이주일, 어버이주일, 스승의주일, 가정주일), 야외예배</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(9)" :class="{ active: modalStates[9] }">
+          <img src="https://www.dropbox.com/scl/fi/fj6bcx1fk0x2kngjmp8li/20240512-59700382513.jpg?rlkey=9r22ih9gqf7rt1lyy1ruwg02v&st=ex1bje7i&raw=1" alt="">
+        </div>
+        <div class="imgContainer" @click="toggleModal(10)" :class="{ active: modalStates[10] }">
+          <img src="https://www.dropbox.com/scl/fi/a05zm8n1foam7rpp9oqk1/20240512-59700382502.jpg?rlkey=1tpmh86ejmt4yn4h108k82ynj&st=fifwbxse&raw=1" alt="">
+        </div>
+      </div>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(11)" :class="{ active: modalStates[11] }">
+          <img src="https://www.dropbox.com/scl/fi/s7xppqw7puh2kc2x3dupe/20220515-41124348732.jpg?rlkey=vnx7fp7ny60fopidywg8l8y2l&st=u7c92lue&raw=1" alt="">
+        </div>
+        <div class="imgContainer" @click="toggleModal(12)" :class="{ active: modalStates[12] }">
+          <img src="https://www.dropbox.com/scl/fi/gx649s90pycp9ijy0gmh7/20220515-41124348653.jpg?rlkey=689etjjqcp5vwg5rs3o3e94b0&st=ua8geurc&raw=1" alt="">
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[9]">
+        <img src="https://www.dropbox.com/scl/fi/fj6bcx1fk0x2kngjmp8li/20240512-59700382513.jpg?rlkey=9r22ih9gqf7rt1lyy1ruwg02v&st=ex1bje7i&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[10]">
+        <img src="https://www.dropbox.com/scl/fi/a05zm8n1foam7rpp9oqk1/20240512-59700382502.jpg?rlkey=1tpmh86ejmt4yn4h108k82ynj&st=fifwbxse&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[11]">
+        <img src="https://www.dropbox.com/scl/fi/s7xppqw7puh2kc2x3dupe/20220515-41124348732.jpg?rlkey=vnx7fp7ny60fopidywg8l8y2l&st=u7c92lue&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[12]">
+        <img src="https://www.dropbox.com/scl/fi/gx649s90pycp9ijy0gmh7/20220515-41124348653.jpg?rlkey=689etjjqcp5vwg5rs3o3e94b0&st=ua8geurc&raw=1" alt="">
+      </div>
     </div>
     <div class="annualEvent-Container">
       <h3>6월</h3>
@@ -33,11 +152,11 @@ export default {
     </div>
     <div class="annualEvent-Container">
       <h3>7월</h3>
-      <p>여름성경학교</p>
+      <p>주일학교 여름성경학교</p>
     </div>
     <div class="annualEvent-Container">
       <h3>8월</h3>
-      <p>전교인 여름수련회, 부서별 수련회</p>
+      <p>전교인 여름 수련회, 부서별 수련회</p>
     </div>
     <div class="annualEvent-Container">
       <h3>9월</h3>
@@ -91,6 +210,34 @@ export default {
     color: black;
     height: 100%;
   }
+  .click {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .eventImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .bigImg {
+    width: 100%;
+    
+  }
+  .bigImg img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .imgContainer {
+    width: 50%;
+    text-align: center
+  }
+  .imgContainer strong {
+    font-size: 0.7rem;
+  }
+  .eventImgBox img {
+    width: 95%;
+  }
   .annualEventMain h2 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
     font-size: 1.7rem;
@@ -104,6 +251,9 @@ export default {
   }
   .annualEvent-Container p {
     font-size: 15px;
+  }
+  .imgContainer.active img {
+    border: 3px solid red; /* 원하는 border 스타일 */
   }
 }
 </style>

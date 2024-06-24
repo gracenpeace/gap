@@ -6,6 +6,7 @@ export default {
 
 <template>
   <div class="servePersonMain">
+    <p class="division">교회소개 > 섬기는이</p>
     <h2>섬기는이</h2>
     <div class="serveDivision">
       <h3>교역자</h3>
@@ -180,6 +181,9 @@ export default {
     color: black;
     height: 100%;
   }
+  .division {
+    display: none;
+  }
   .servePersonMain h2,
   .serveDivision h3,
   .serveDivision h4 {
@@ -244,6 +248,9 @@ export default {
     color: black;
     height: 100%;
   }
+  .division {
+    display: none;
+  }
   .servePersonMain h2,
   .serveDivision h3,
   .serveDivision h4 {
@@ -298,6 +305,77 @@ export default {
   }
   .serveDiv {
     display: block;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .servePersonMain {
+    padding: 30px 5% 150px 7%;
+    background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold, sans-serif;
+    color: black;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .division {
+    padding-left: 25px;
+  }
+  .servePersonMain h2,
+  .serveDivision h3,
+  .serveDivision h4 {
+    font-family: NanumSquareNeo-Variable-ExtraBold, sans-serif;
+  }
+  .servePersonMain h2 {
+    font-size: 35px;
+    padding-top: 30px;
+    display: none;
+  }
+  .serveDivision {
+    padding-top: 30px;
+    line-height: 1.8;
+  }
+  .serveDivision h3 {
+    font-size: 35px;
+    padding-left: 5px;
+  }
+  .serveDivision h4 {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  .leader {
+    width: 62%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .leaderWidthImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .leaderLengthImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .leaderWidthImgContainer img {
+    width: 90%;
+  }
+  .leaderLengthImgContainer img {
+    width: 45%;
+  }
+  .name {
+    font-family: NanumSquareNeo-Variable-ExtraBold, sans-serif;
+    font-size: 25px;
+  }
+  .team {
+    font-size: 20px;
+  }
+  .serveDiv {
+    display: flex;
   }
 }
 </style>

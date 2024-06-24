@@ -99,6 +99,8 @@ export default {
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
     height: 100%;
+    width: 1200px;
+    margin: 0 auto;
   }
   .confessionImgBox {
     display: flex;
@@ -106,7 +108,7 @@ export default {
     align-items: center;
   }
   .confessionImgBox img {
-    width: 40%;
+    width: 35%;
     padding-bottom: 30px;
   }
   .confessionMain h2 {
@@ -119,7 +121,7 @@ export default {
   .creed {
     padding-top: 10px;
     padding: 1rem 0 0 1rem;
-    line-height: 1.8;
+    line-height: 2.2;
     padding-left: 20%;
   }
   .creed h2 {

@@ -77,4 +77,30 @@ export default {
     font-size: 13px;
   }
 }
+@media screen and (min-width: 1025px) {
+  .feedMain {
+    padding: 50px 5% 0 10%;
+    background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 900px;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .feedMain h2 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 33px;
+  }
+  .feed-container {
+    padding-top: 30px;
+    line-height: 2.2;
+  }
+  .feed-container h3 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 25px;
+  }
+  .feed-container p{
+    font-size: 18px;
+  }
+}
 </style>

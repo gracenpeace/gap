@@ -6,6 +6,7 @@ export default {
 
 <template>
   <div class="introduce-container">
+    <p class="division">교회소개 > 교회소개</p>
     <h2>교회 소개 페이지</h2>
     <div class="video-wrapper">
       <iframe
@@ -43,6 +44,9 @@ export default {
     width: 100%;
     height: 380px;
   }
+  .division {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .introduce-container {
@@ -67,10 +71,13 @@ export default {
     width: 100%;
     height: 185px;
   }
+  .division {
+    display: none;
+  }
 }
 @media screen and (min-width: 1025px) {
   .introduce-container {
-    padding: 50px 5% 240px 5%;
+    padding: 30px 6% 240px 7%;
     background-color: white;
     height: 100%;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
@@ -79,12 +86,13 @@ export default {
     margin: 0 auto;
   }
   .introduce-container h2 {
+    padding-top: 30px;
     font-size: 1.7rem;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
     padding-left: 70px;
   }
   .video-wrapper {
-    margin-top: 50px;
+    padding-top: 30px;
     position: relative;
     padding-bottom: 56.25%; /* 16:9 비율 */
     display: flex;
@@ -94,6 +102,10 @@ export default {
   .video-wrapper iframe {
     width: 800px;
     height: 452px;
+  }
+  .division {
+    padding-left: 6.5%;
+    margin: 0 auto;
   }
 }
 </style>

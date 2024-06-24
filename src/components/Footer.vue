@@ -104,12 +104,14 @@ export default {
     display: none;
   }
   .footerBoxWeb {
+    width: 100%;
     padding-top: 30px;
     background : #1f4866;
     font-family: 'NanumSquareNeo-Variable-Bold',sans-serif;
     color: white;
-    height: 240px;
+    height: 200px;
     text-align: center;
+    margin: auto;
   }
 }
 </style>

@@ -6,6 +6,7 @@ export default {
 
 <template>
   <div class="worship-container">
+    <p class="division">교회소개 > 예배 안내</p>
     <h2>예배 안내</h2>
     <div class="worshipContents">
       <p class="worshipTitle">주일예배</p>
@@ -74,6 +75,9 @@ export default {
     font-size: 0.9rem;
     color: black;
   }
+  .division {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .worship-container {
@@ -114,6 +118,57 @@ export default {
   }
   .time {
     font-size: 11px;
+    color: black;
+  }
+  .division {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .worship-container {
+    padding: 30px 7% 150px 8%;
+    background-color: white;
+    height: 100%;
+    font-family: NanumSquareNeo-Variable-Bold, sans-serif;
+    color: black;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .division {
+    padding-left: 10px;
+  }
+  .worshipContents {
+    padding: 2rem 0 0 1rem;
+    line-height: 2.3;
+    padding-left: 50px;
+  }
+  .worship-container h2 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 35px;
+    color: black;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  .worshipTitle {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 30px;
+    color: black;
+  }
+  .worshipContent {
+    margin-top: 0.3rem;
+    color: black;
+  }
+  .worshipName{
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+  .worshipPost {
+    font-size: 15px; padding-bottom: 5px; margin-left: 6%;
+    font-family: NanumSquareNeo-Variable-Regular,sans-serif;
+  }
+  .time {
+    font-size: 15px;
     color: black;
   }
 }

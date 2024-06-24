@@ -67,7 +67,7 @@ export default {
     align-items: center;
   }
   .headerImg img {
-    width: 250px;
+    width: 220px;
     background-color: white;
   }
 

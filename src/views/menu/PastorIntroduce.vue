@@ -6,6 +6,7 @@ export default {
 
 <template>
   <div class="PastorIntroduceMain">
+    <p class="division">교회소개 > 목사님 소개</p>
     <div class="image-container">
       <p>이미지</p>
       <h2>담임목사 주기수</h2>
@@ -50,6 +51,9 @@ export default {
   .profile-container p {
     font-size: 1.3rem;
   }
+  .division {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .PastorIntroduceMain {
@@ -83,17 +87,24 @@ export default {
   .profile-container p {
     font-size: 15px;
   }
+  .division {
+    display: none;
+  }
 }
 @media screen and (min-width: 1025px) {
   .PastorIntroduceMain {
-    padding: 50px 5% 240px 5%;
+    padding: 30px 5% 240px 5%;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
     height: 900px;
   }
+  .division {
+    padding-left: 24.5%;
+  }
   .image-container{
-    width:180px;
+    width:200px;
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -107,14 +118,14 @@ export default {
   }
   .image-container h2 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    font-size: 23px;
+    font-size: 28px;
   }
   .profile-container h3 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    font-size: 20px;
+    font-size: 24px;
   }
   .profile-container p {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 </style>
