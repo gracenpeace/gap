@@ -3,7 +3,7 @@ export default {
   name: "AnnualEvent",
   data() {
     return {
-      modalStates: Array(17).fill(false) // 초기화: 7개의 false 값
+      modalStates: Array(37).fill(false) // 초기화: 7개의 false 값
     }
   },
   methods: {
@@ -28,9 +28,11 @@ export default {
       <div class="eventImgBox" >
         <div class="imgContainer" @click="toggleModal(0)" :class="{ active: modalStates[0] }">
           <img src="https://www.dropbox.com/scl/fi/rast0n1q99trd1eqn0vyn/2024-57234991078.jpg?rlkey=8h5su9d53wri81bzoni3aaggs&st=v687bw2h&raw=1" alt="">
+          <strong>2024 단기선교</strong>
         </div>
         <div class="imgContainer" @click="toggleModal(1)" :class="{ active: modalStates[1] }">
           <img src="https://www.dropbox.com/scl/fi/s1hk2pmwag37z4zseo0ng/2024-57234991083.jpg?rlkey=38glnezi4x27axj51lnxqebpu&st=unupvped&raw=1" alt="">
+          <strong>2024 단기선교</strong>
         </div>
       </div>
       <div class="click">
@@ -49,17 +51,21 @@ export default {
       <div class="eventImgBox" >
         <div class="imgContainer" @click="toggleModal(2)" :class="{ active: modalStates[2] }">
           <img src="https://www.dropbox.com/scl/fi/e7d433icvmj7x54qw92r6/20240301-240303-58649710673.jpg?rlkey=xidhc3his2iloxfwmmtvdncyi&st=5hkcn053&raw=1" alt="">
+          <strong>2024 겨울수련회</strong>
         </div>
         <div class="imgContainer" @click="toggleModal(3)" :class="{ active: modalStates[3] }">
           <img src="https://www.dropbox.com/scl/fi/65mbh2z7q18nekso77wsm/20240301-240303-58649639747.jpg?rlkey=c1qq6r06yl316ljhlm5hdxpk8&st=uflz657j&raw=1" alt="">
+          <strong>2024 겨울수련회</strong>
         </div>
       </div>
       <div class="eventImgBox" >
         <div class="imgContainer" @click="toggleModal(4)" :class="{ active: modalStates[4] }">
           <img src="https://www.dropbox.com/scl/fi/r1ybaum1p0dw40pxlhewk/2024-2_15-2_17-57543759716.jpg?rlkey=g9pvng71tn1fyphfgecs7mtxo&st=a4brxbt2&raw=1" alt="">
+          <strong>2024 스키캠프</strong>
         </div>
         <div class="imgContainer" @click="toggleModal(5)" :class="{ active: modalStates[5] }">
           <img src="https://www.dropbox.com/scl/fi/iao0g51v7gbidxnobk5i3/2024-2_15-2_17-57540335014.jpg?rlkey=7ulau2j4utcsaea72j7gcesny&st=obxvp648&raw=1" alt="">
+          <strong>2024 스키캠프</strong>
         </div>
       </div>
       <div class="click">
@@ -88,14 +94,17 @@ export default {
       <div class="eventImgBox" >
         <div class="imgContainer" @click="toggleModal(6)" :class="{ active: modalStates[6] }">
           <img src="https://www.dropbox.com/scl/fi/11j5rpo3ku6e6sry2j51z/240331-58597321641.jpg?rlkey=k2qh94dwl4c0ybsdzn43j3zdz&st=1ikitr8u&raw=1" alt="">
+          <strong>2024 부활 감사 찬양 축제</strong>
         </div>
         <div class="imgContainer" @click="toggleModal(7)" :class="{ active: modalStates[7] }">
           <img src="https://www.dropbox.com/scl/fi/jwx46iz8gf81zxudv769z/240331-58896946761.jpg?rlkey=rpu0rt326ig3n8pzm0jw4ah6r&st=bmmpenle&raw=1" alt="">
+          <strong>2024 부활 감사 찬양 축제</strong>
         </div>
       </div>
       <div class="eventImgBox" >
         <div class="imgContainer" @click="toggleModal(8)" :class="{ active: modalStates[8] }">
           <img src="https://www.dropbox.com/scl/fi/8jnkepkdhqvfvttkx6zj3/240331-58896972309.jpg?rlkey=upee8jy44n6soxkyv2ozh3ezz&st=yqg6dsxr&raw=1" alt="">
+          <strong>2024 부활 감사 찬양 축제</strong>
         </div>
       </div>
       <div class="click">
@@ -117,17 +126,21 @@ export default {
       <div class="eventImgBox" >
         <div class="imgContainer" @click="toggleModal(9)" :class="{ active: modalStates[9] }">
           <img src="https://www.dropbox.com/scl/fi/fj6bcx1fk0x2kngjmp8li/20240512-59700382513.jpg?rlkey=9r22ih9gqf7rt1lyy1ruwg02v&st=ex1bje7i&raw=1" alt="">
+          <strong>2024 야외예배</strong>
         </div>
         <div class="imgContainer" @click="toggleModal(10)" :class="{ active: modalStates[10] }">
           <img src="https://www.dropbox.com/scl/fi/a05zm8n1foam7rpp9oqk1/20240512-59700382502.jpg?rlkey=1tpmh86ejmt4yn4h108k82ynj&st=fifwbxse&raw=1" alt="">
+          <strong>2024 야외예배</strong>
         </div>
       </div>
       <div class="eventImgBox" >
         <div class="imgContainer" @click="toggleModal(11)" :class="{ active: modalStates[11] }">
           <img src="https://www.dropbox.com/scl/fi/s7xppqw7puh2kc2x3dupe/20220515-41124348732.jpg?rlkey=vnx7fp7ny60fopidywg8l8y2l&st=u7c92lue&raw=1" alt="">
+          <strong>2022 스승의주일</strong>
         </div>
         <div class="imgContainer" @click="toggleModal(12)" :class="{ active: modalStates[12] }">
           <img src="https://www.dropbox.com/scl/fi/gx649s90pycp9ijy0gmh7/20220515-41124348653.jpg?rlkey=689etjjqcp5vwg5rs3o3e94b0&st=ua8geurc&raw=1" alt="">
+          <strong>2022 스승의주일</strong>
         </div>
       </div>
       <div class="click">
@@ -149,10 +162,80 @@ export default {
     <div class="annualEvent-Container">
       <h3>6월</h3>
       <p>설립기념감사예배, 양육반 종강, 한국 개혁신학원 1학기 종강</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(13)" :class="{ active: modalStates[13] }">
+          <img src="https://www.dropbox.com/scl/fi/fri5q1szsb6h7xmkwm5cy/2024-20240609-16-60536967590.jpg?rlkey=n7hdjjnxqqkqjnsly3lzagwax&st=4bmcxyjw&raw=1" alt="">
+          <strong>2024 설립기념감사예배</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(14)" :class="{ active: modalStates[14] }">
+          <img src="https://www.dropbox.com/scl/fi/dc6qp12ssxphbp7fojmqm/2024-20240609-16-60619676087.jpg?rlkey=iwkt2a147veqoxrcpvchczyj1&st=nzfvculz&raw=1" alt="">
+          <strong>2024 설립기념감사예배</strong>
+        </div>
+      </div>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(15)" :class="{ active: modalStates[15] }">
+          <img src="https://www.dropbox.com/scl/fi/0ao141myom9x1t7upbxsg/2024-20240609-16-60619676152.jpg?rlkey=9v11w3m3zzlfm77qgvobolkp7&st=2tuvfwr4&raw=1" alt="">
+          <strong>2024 설립기념감사예배</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(16)" :class="{ active: modalStates[16] }">
+          <img src="https://www.dropbox.com/scl/fi/86sm5eyzv39pidqsorz7l/2024-20240609-16-60619676199.jpg?rlkey=kgd7ospjz18ibkym6k7e98yyz&st=txsi164k&raw=1" alt="">
+          <strong>2024 설립기념감사예배</strong>
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[13]">
+        <img src="https://www.dropbox.com/scl/fi/fri5q1szsb6h7xmkwm5cy/2024-20240609-16-60536967590.jpg?rlkey=n7hdjjnxqqkqjnsly3lzagwax&st=4bmcxyjw&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[14]">
+        <img src="https://www.dropbox.com/scl/fi/dc6qp12ssxphbp7fojmqm/2024-20240609-16-60619676087.jpg?rlkey=iwkt2a147veqoxrcpvchczyj1&st=nzfvculz&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[15]">
+        <img src="https://www.dropbox.com/scl/fi/0ao141myom9x1t7upbxsg/2024-20240609-16-60619676152.jpg?rlkey=9v11w3m3zzlfm77qgvobolkp7&st=2tuvfwr4&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[16]">
+        <img src="https://www.dropbox.com/scl/fi/86sm5eyzv39pidqsorz7l/2024-20240609-16-60619676199.jpg?rlkey=kgd7ospjz18ibkym6k7e98yyz&st=txsi164k&raw=1" alt="">
+      </div>
     </div>
     <div class="annualEvent-Container">
       <h3>7월</h3>
       <p>주일학교 여름성경학교</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(17)" :class="{ active: modalStates[17] }">
+          <img src="https://www.dropbox.com/scl/fi/oatibklsjl5udb8qz7utk/2023-54084410734.jpg?rlkey=t3ldizadg837rnbfarqpdjelk&st=n38thxhi&raw=1" alt="">
+          <strong>2023 여름성경학교</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(18)" :class="{ active: modalStates[18] }">
+          <img src="https://www.dropbox.com/scl/fi/96miqo2kb112dw4k4id4p/2023-54084410749.jpg?rlkey=27anfq5gntkr5p7tbp86cxwq8&st=bpx8kjcd&raw=1" alt="">
+          <strong>2023 여름성경학교</strong>
+        </div>
+      </div>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(19)" :class="{ active: modalStates[19] }">
+          <img src="https://www.dropbox.com/scl/fi/ruqsdzvwds3zushyzixyn/2023-54084410654.jpg?rlkey=hjq953n8wfwcozn9u1qh6s1ej&st=wxxyx6p3&raw=1" alt="">
+          <strong>2023 여름성경학교</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(20)" :class="{ active: modalStates[20] }">
+          <img src="https://www.dropbox.com/scl/fi/tbvs3h49lof32dy06wdx9/2023-54084347986.jpg?rlkey=fer3p3opwqkqmxm8x4e89xmut&st=o7uq10gy&raw=1" alt="">
+          <strong>2023 여름성경학교</strong>
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[17]">
+        <img src="https://www.dropbox.com/scl/fi/oatibklsjl5udb8qz7utk/2023-54084410734.jpg?rlkey=t3ldizadg837rnbfarqpdjelk&st=n38thxhi&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[18]">
+        <img src="https://www.dropbox.com/scl/fi/96miqo2kb112dw4k4id4p/2023-54084410749.jpg?rlkey=27anfq5gntkr5p7tbp86cxwq8&st=bpx8kjcd&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[19]">
+        <img src="https://www.dropbox.com/scl/fi/ruqsdzvwds3zushyzixyn/2023-54084410654.jpg?rlkey=hjq953n8wfwcozn9u1qh6s1ej&st=wxxyx6p3&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[20]">
+        <img src="https://www.dropbox.com/scl/fi/tbvs3h49lof32dy06wdx9/2023-54084347986.jpg?rlkey=fer3p3opwqkqmxm8x4e89xmut&st=o7uq10gy&raw=1" alt="">
+      </div>
     </div>
     <div class="annualEvent-Container">
       <h3>8월</h3>
@@ -230,7 +313,9 @@ export default {
   }
   .imgContainer {
     width: 50%;
-    text-align: center
+    text-align: center;
+    line-height: 1;
+    padding-top: 15px;
   }
   .imgContainer strong {
     font-size: 0.7rem;
@@ -250,10 +335,13 @@ export default {
     font-size: 20px;
   }
   .annualEvent-Container p {
-    font-size: 15px;
+    font-size: 16px;
   }
   .imgContainer.active img {
     border: 3px solid red; /* 원하는 border 스타일 */
+  }
+  .click {
+    padding-top: 10px;
   }
 }
 </style>
