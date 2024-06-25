@@ -240,6 +240,57 @@ export default {
     <div class="annualEvent-Container">
       <h3>8월</h3>
       <p>전교인 여름 수련회, 부서별 수련회</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(21)" :class="{ active: modalStates[21] }">
+          <img src="https://www.dropbox.com/scl/fi/n76is4oqcfwriqptdwtb7/2023-53251775956.jpg?rlkey=ks55m9n0r496k2kwxnqf0q3fu&st=t3zzgo66&raw=1" alt="">
+          <strong>2023 전교인 여름 수련회</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(22)" :class="{ active: modalStates[22] }">
+          <img src="https://www.dropbox.com/scl/fi/2v450ll994t6skhhvcjkg/2023-53251583484.jpg?rlkey=vyyqi1l9i80fliunkba3in1n1&st=nlyvjrci&raw=1" alt="">
+          <strong>2023 전교인 여름 수련회</strong>
+        </div>
+      </div>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(23)" :class="{ active: modalStates[23] }">
+          <img src="https://www.dropbox.com/scl/fi/dzwx578xsvois3r84wf7g/2023-53245754642.jpg?rlkey=boojvplfstmtumyqcf1obefpf&st=sap76oxd&raw=1" alt="">
+          <strong>2023 우리는 청년부 수련회</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(24)" :class="{ active: modalStates[24] }">
+          <img src="https://www.dropbox.com/scl/fi/bg0emt8nzhumj3gi5uy00/2023-53250032831.jpg?rlkey=d44z6o94zjnvu9n80bwasva74&st=ndl7wx71&raw=1" alt="">
+          <strong>2023 우리는 청년부 수련회</strong>
+        </div>
+      </div>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(25)" :class="{ active: modalStates[25] }">
+          <img src="https://www.dropbox.com/scl/fi/6dvimpzeglchumtllyo72/2023-53085670594.jpg?rlkey=iaxbi410zle3o5rhwkaxpueu7&st=p75jh4sz&raw=1" alt="">
+          <strong>2023 라온 학생부 수련회</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(26)" :class="{ active: modalStates[26] }">
+          <img src="https://www.dropbox.com/scl/fi/2iitsqnepwu1rc8odxlvt/2023-53232784050.jpg?rlkey=w9pv49m3ad0c5uhaj6gmnl5br&st=gjpsqg41&raw=1" alt="">
+          <strong>2023 라온 학생부 수련회</strong>
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[21]">
+        <img src="https://www.dropbox.com/scl/fi/n76is4oqcfwriqptdwtb7/2023-53251775956.jpg?rlkey=ks55m9n0r496k2kwxnqf0q3fu&st=t3zzgo66&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[22]">
+        <img src="https://www.dropbox.com/scl/fi/2v450ll994t6skhhvcjkg/2023-53251583484.jpg?rlkey=vyyqi1l9i80fliunkba3in1n1&st=nlyvjrci&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[23]">
+        <img src="https://www.dropbox.com/scl/fi/lyu0abolme991r7k90hdm/2023-53764673918.jpg?rlkey=rtmtq9hzfz0sl0k26x5svtc0p&st=1ldr6duf&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[24]">
+        <img src="https://www.dropbox.com/scl/fi/bg0emt8nzhumj3gi5uy00/2023-53250032831.jpg?rlkey=d44z6o94zjnvu9n80bwasva74&st=ndl7wx71&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[25]">
+        <img src="https://www.dropbox.com/scl/fi/6dvimpzeglchumtllyo72/2023-53085670594.jpg?rlkey=iaxbi410zle3o5rhwkaxpueu7&st=p75jh4sz&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[26]">
+        <img src="https://www.dropbox.com/scl/fi/2iitsqnepwu1rc8odxlvt/2023-53232784050.jpg?rlkey=w9pv49m3ad0c5uhaj6gmnl5br&st=gjpsqg41&raw=1" alt="">
+      </div>
     </div>
     <div class="annualEvent-Container">
       <h3>9월</h3>
@@ -342,6 +393,7 @@ export default {
   }
   .click {
     padding-top: 10px;
+    padding-bottom: 15px;
   }
 }
 </style>
