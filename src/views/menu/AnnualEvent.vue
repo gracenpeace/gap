@@ -21,7 +21,8 @@ export default {
 
 <template>
   <div class="annualEventMain">
-    <h2>연간 행사들</h2>
+    <p class="division">교회소개 > 연간 행사</p>
+    <h2>연간 행사</h2>
     <div class="annualEvent-Container">
       <h3>1월</h3>
       <p>신년감사예배, 단기선교, 직분자 양육</p>
@@ -51,11 +52,11 @@ export default {
       <div class="eventImgBox" >
         <div class="imgContainer" @click="toggleModal(2)" :class="{ active: modalStates[2] }">
           <img src="https://www.dropbox.com/scl/fi/e7d433icvmj7x54qw92r6/20240301-240303-58649710673.jpg?rlkey=xidhc3his2iloxfwmmtvdncyi&st=5hkcn053&raw=1" alt="">
-          <strong>2024 겨울수련회</strong>
+          <strong>2024 전교인 겨울 수련회</strong>
         </div>
         <div class="imgContainer" @click="toggleModal(3)" :class="{ active: modalStates[3] }">
           <img src="https://www.dropbox.com/scl/fi/65mbh2z7q18nekso77wsm/20240301-240303-58649639747.jpg?rlkey=c1qq6r06yl316ljhlm5hdxpk8&st=uflz657j&raw=1" alt="">
-          <strong>2024 겨울수련회</strong>
+          <strong>2024 전교인 겨울 수련회</strong>
         </div>
       </div>
       <div class="eventImgBox" >
@@ -299,14 +300,87 @@ export default {
     <div class="annualEvent-Container">
       <h3>10월</h3>
       <p>전교인 가을 운동회</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(27)" :class="{ active: modalStates[27] }">
+          <img src="https://www.dropbox.com/scl/fi/wtfvau72y37yi2v60eiq7/20231009-54552423657.jpg?rlkey=bolguunpmefp21fyo4tzrh8jw&st=zl77rhj5&raw=1" alt="">
+          <strong>2023 전교인 가을 운동회</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(28)" :class="{ active: modalStates[28] }">
+          <img src="https://www.dropbox.com/scl/fi/7fpjdl0hrifdki1ebnago/20221002-45316798730.jpg?rlkey=h8hvxfelfmiwpupx1tsrjgnei&st=rw2uuc9s&raw=1" alt="">
+          <strong>2022 전교인 가을 운동회</strong>
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[27]">
+        <img src="https://www.dropbox.com/scl/fi/wtfvau72y37yi2v60eiq7/20231009-54552423657.jpg?rlkey=bolguunpmefp21fyo4tzrh8jw&st=zl77rhj5&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[28]">
+        <img src="https://www.dropbox.com/scl/fi/7fpjdl0hrifdki1ebnago/20221002-45316798730.jpg?rlkey=h8hvxfelfmiwpupx1tsrjgnei&st=rw2uuc9s&raw=1" alt="">
+      </div>
     </div>
     <div class="annualEvent-Container">
       <h3>11월</h3>
       <p>추수감사예배, 행복나눔축제예배, 양육반 종강, 한국 개혁신학원 2학기 종강, 각부서별 총회</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(29)" :class="{ active: modalStates[29] }">
+          <img src="https://www.dropbox.com/scl/fi/1m65nt73jpf6yrm0mttm1/231119-57184708740.jpg?rlkey=1kd3ibwrdt2astxxdncys26ny&st=q5iwhu7t&raw=1" alt="">
+          <strong>2023 추수감사예배</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(30)" :class="{ active: modalStates[30] }">
+          <img src="https://www.dropbox.com/scl/fi/g1k4wsdfkxtpq8qacmp1b/231119-57184775285.jpg?rlkey=85klcuu6lv2ov6dod62vr5hkj&st=jw41b31y&raw=1" alt="">
+          <strong>2023 추수감사예배</strong>
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[29]">
+        <img src="https://www.dropbox.com/scl/fi/1m65nt73jpf6yrm0mttm1/231119-57184708740.jpg?rlkey=1kd3ibwrdt2astxxdncys26ny&st=q5iwhu7t&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[30]">
+        <img src="https://www.dropbox.com/scl/fi/g1k4wsdfkxtpq8qacmp1b/231119-57184775285.jpg?rlkey=85klcuu6lv2ov6dod62vr5hkj&st=jw41b31y&raw=1" alt="">
+      </div>
     </div>
     <div class="annualEvent-Container">
       <h3>12월</h3>
-      <p>성탄 전야제장기자랑, 성탄감사예배</p>
+      <p>성탄 전야제 장기자랑, 성탄감사예배</p>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(31)" :class="{ active: modalStates[31] }">
+          <img src="https://www.dropbox.com/scl/fi/xr9c4y08onlnrzxyvwto4/231224-56337548341.jpg?rlkey=qpba2nk0xk5klzn2y2ewdad1f&st=88ma5qgh&raw=1" alt="">
+          <strong>2023 성탄 전야제 장기자랑</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(32)" :class="{ active: modalStates[32] }">
+          <img src="https://www.dropbox.com/scl/fi/1camgtdx66rickk7el55q/231224-56365988022.jpg?rlkey=2y776jrtl98l59ybu1snkyl99&st=wpqy7mqe&raw=1" alt="">
+          <strong>2023 성탄 전야제 장기자랑</strong>
+        </div>
+      </div>
+      <div class="eventImgBox" >
+        <div class="imgContainer" @click="toggleModal(33)" :class="{ active: modalStates[33] }">
+          <img src="https://www.dropbox.com/scl/fi/zazttbliqdssrp7y4rr66/231225-56353458591.jpg?rlkey=84s9ltygzrrorxpqnvro7x8e6&st=fwd6c170&raw=1" alt="">
+          <strong>2023 성탄감사예배</strong>
+        </div>
+        <div class="imgContainer" @click="toggleModal(34)" :class="{ active: modalStates[34] }">
+          <img src="https://www.dropbox.com/scl/fi/260nkgtihrr7y3usopdqs/231225-57232635700.jpg?rlkey=pbvbiirkxkva6f7glsbst0lfi&st=cmqp4o2g&raw=1" alt="">
+          <strong>2023 성탄감사예배</strong>
+        </div>
+      </div>
+      <div class="click">
+        <strong>click시 확대</strong>
+      </div>
+      <div class="bigImg" v-if="modalStates[31]">
+        <img src="https://www.dropbox.com/scl/fi/xr9c4y08onlnrzxyvwto4/231224-56337548341.jpg?rlkey=qpba2nk0xk5klzn2y2ewdad1f&st=88ma5qgh&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[32]">
+        <img src="https://www.dropbox.com/scl/fi/1camgtdx66rickk7el55q/231224-56365988022.jpg?rlkey=2y776jrtl98l59ybu1snkyl99&st=wpqy7mqe&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[33]">
+        <img src="https://www.dropbox.com/scl/fi/zazttbliqdssrp7y4rr66/231225-56353458591.jpg?rlkey=84s9ltygzrrorxpqnvro7x8e6&st=fwd6c170&raw=1" alt="">
+      </div>
+      <div class="bigImg" v-if="modalStates[34]">
+        <img src="https://www.dropbox.com/scl/fi/260nkgtihrr7y3usopdqs/231225-57232635700.jpg?rlkey=pbvbiirkxkva6f7glsbst0lfi&st=cmqp4o2g&raw=1" alt="">
+      </div>
     </div>
   </div>
 </template>
@@ -314,15 +388,48 @@ export default {
 <style scoped>
 @media screen and (max-width: 1025px) {
   .annualEventMain {
-    padding: 8rem 2.5rem 150px 4.5rem;
+    padding: 8rem 2.5rem 150px 2.5rem;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
     height: 100%;
   }
+  .click {
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .eventImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .bigImg {
+    width: 100%;
+
+  }
+  .bigImg img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .imgContainer {
+    width: 50%;
+    text-align: center;
+    line-height: 1;
+    padding-top: 15px;
+  }
+  .imgContainer strong {
+    font-size: 1rem;
+  }
+  .eventImgBox img {
+    width: 95%;
+  }
   .annualEventMain h2 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+    padding-left: 10px;
   }
   .annualEvent-Container {
     margin-top: 20px;
@@ -330,10 +437,18 @@ export default {
   }
   .annualEvent-Container h3 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding-left: 10px;
   }
   .annualEvent-Container p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    padding-left: 10px;
+  }
+  .imgContainer.active img {
+    border: 3px solid red; /* 원하는 border 스타일 */
+  }
+  .division {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -394,6 +509,77 @@ export default {
   .click {
     padding-top: 10px;
     padding-bottom: 15px;
+  }
+  .division {
+    display: none;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .annualEventMain {
+    padding: 30px 6% 150px 8%;
+    background-color: white;
+    font-family: NanumSquareNeo-Variable-Bold,sans-serif;
+    color: black;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .click {
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 80%;
+  }
+  .eventImgBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+  .bigImg {
+    width: 80%;
+  }
+  .bigImg img {
+    width: 100%;
+    border-radius: 15px;
+  }
+  .imgContainer {
+    width: 50%;
+    text-align: center;
+    line-height: 1;
+    padding-top: 15px;
+  }
+  .imgContainer strong {
+    font-size: 1rem;
+  }
+  .eventImgBox img {
+    width: 90%;
+  }
+  .annualEventMain h2 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 30px;
+    padding-left: 45px;
+    padding-top: 30px;
+  }
+  .annualEvent-Container {
+    margin-top: 20px;
+    line-height: 1.8;
+  }
+  .annualEvent-Container h3 {
+    font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
+    font-size: 23px;
+    padding-left: 45px;
+  }
+  .annualEvent-Container p {
+    font-size: 18px;
+    padding-left: 45px;
+  }
+  .imgContainer.active img {
+    border: 3px solid red; /* 원하는 border 스타일 */
+  }
+  .division {
+    padding-left: 5%;
   }
 }
 </style>
