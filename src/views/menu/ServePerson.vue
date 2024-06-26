@@ -150,7 +150,9 @@ export default {
           <p class="name">은혜목장 한성수</p>
         </div>
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/j0g1g2rfru8f2mgl07ugu/jaesup.jpg?rlkey=he67tothpmo0aup3hiwke9omu&st=qo3zjp4z&raw=1" alt="">
+          </div>
           <p class="name">쉴만한목장 신재섭</p>
         </div>
       </div>
