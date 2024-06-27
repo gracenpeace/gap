@@ -62,7 +62,7 @@ export default {
   .visionMain {
     width: 1200px;
     margin: 0 auto;
-    padding: 30px 5% 150px 8%;
+    padding: 30px 10% 150px 10.5%;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold,sans-serif;
     color: black;
@@ -70,7 +70,6 @@ export default {
   }
   .division {
     font-size: 15px;
-    padding-left: 10px;
   }
   .visionMain h1 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;

@@ -100,7 +100,7 @@ export default {
     height: 900px;
   }
   .division {
-    padding-left: 24.5%;
+    padding-left: 17.8%;
   }
   .image-container{
     width:200px;

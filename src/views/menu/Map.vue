@@ -93,7 +93,7 @@ export default {
   }
   .map-container h3 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    padding-left: 30px;
+    padding-left: 60px;
     padding-bottom: 20px;
     padding-top: 30px;
     font-size:30px;
@@ -112,7 +112,7 @@ export default {
     width: 100%;
   }
   .division {
-    padding-left: 30px;
+    padding-left: 55px;
   }
 }
 </style>

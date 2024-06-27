@@ -89,7 +89,7 @@ export default {
     padding-top: 30px;
     font-size: 1.7rem;
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
-    padding-left: 70px;
+    padding-left: 90px;
   }
   .video-wrapper {
     padding-top: 30px;
@@ -104,7 +104,7 @@ export default {
     height: 452px;
   }
   .division {
-    padding-left: 6.5%;
+    padding-left: 8.5%;
     margin: 0 auto;
   }
 }

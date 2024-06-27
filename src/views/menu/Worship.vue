@@ -126,7 +126,7 @@ export default {
 }
 @media screen and (min-width: 1025px) {
   .worship-container {
-    padding: 30px 7% 150px 8%;
+    padding: 30px 8% 150px 9%;
     background-color: white;
     height: 100%;
     font-family: NanumSquareNeo-Variable-Bold, sans-serif;
@@ -135,19 +135,18 @@ export default {
     margin: 0 auto;
   }
   .division {
-    padding-left: 10px;
+    padding-left: 24px;
   }
   .worshipContents {
-    padding: 2rem 0 0 1rem;
+    padding: 2rem 0 0 21%;
     line-height: 2.3;
-    padding-left: 50px;
   }
   .worship-container h2 {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;
     font-size: 35px;
     color: black;
     padding-top: 30px;
-    padding-left: 30px;
+    padding-left: 20%;
   }
   .worshipTitle {
     font-family: NanumSquareNeo-Variable-ExtraBold,sans-serif;

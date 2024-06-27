@@ -605,7 +605,7 @@ export default {
     border: 3px solid red; /* 원하는 border 스타일 */
   }
   .division {
-    padding-left: 5%;
+    padding-left: 4%;
   }
 }
 </style>

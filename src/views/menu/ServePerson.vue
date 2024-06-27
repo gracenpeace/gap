@@ -62,7 +62,9 @@ export default {
       <h4>안수집사</h4>
       <div class="serveDiv">
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/o7bjfh5mwifr48hgnm1uk/kyeongwon.jpg?rlkey=wpngcxh9tee7dnpvzyy05w1ge&st=nr4ouw44&raw=1" alt="">
+          </div>
           <p class="name">김경원 안수집사</p>
         </div>
         <div class="leader">
@@ -112,7 +114,9 @@ export default {
         </div>
       </div>
       <div class="leader">
-        <p>이미지</p>
+        <div class="leaderLengthImgContainer">
+          <img src="https://www.dropbox.com/scl/fi/5wdf6k9utep0ktusygn0x/byeongsoo.jpg?rlkey=2gs0kqy21bthndsivyp3twnpf&st=ege6ni5g&raw=1" alt="">
+        </div>
         <p class="name">유병수 권사</p>
       </div>
     </div>
@@ -138,7 +142,9 @@ export default {
           <p class="name">평강목장 장춘식</p>
         </div>
         <div class="leader">
-          <p>이미지</p>
+          <div class="leaderLengthImgContainer">
+            <img src="https://www.dropbox.com/scl/fi/o7bjfh5mwifr48hgnm1uk/kyeongwon.jpg?rlkey=wpngcxh9tee7dnpvzyy05w1ge&st=nr4ouw44&raw=1" alt="">
+          </div>
           <p class="name">OK목장 김경원</p>
         </div>
       </div>
@@ -311,7 +317,7 @@ export default {
 }
 @media screen and (min-width: 1025px) {
   .servePersonMain {
-    padding: 30px 5% 150px 7%;
+    padding: 30px 10% 150px 10%;
     background-color: white;
     font-family: NanumSquareNeo-Variable-Bold, sans-serif;
     color: black;
@@ -320,7 +326,7 @@ export default {
     margin: 0 auto;
   }
   .division {
-    padding-left: 25px;
+    padding-left: 8px;
   }
   .servePersonMain h2,
   .serveDivision h3,
